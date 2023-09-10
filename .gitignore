@@ -1,4 +1,7 @@
 out
 .idea
 JavaInterviewPreperation.iml
-.
+dist/*
+target/
+*.class
+*.log
