@@ -1,45 +1,26 @@
 package Programs.DataStructurePrgm;
 
 public class MergeTwoArrays {
-	
-	//https://youtu.be/JeQtPl3nxu4
 
-	//Merge two array and arrange them
-	public static void main(String[] args) {
+    //https://youtu.be/JeQtPl3nxu4
 
-		int[] a = { 10, 20, 100 };
-		int[] b = { 70, 80, 90 };
+    //Merge two array and arrange them
+    public static void main(String[] args) {
+
+        int[] a = {10, 20, 100};
+        int[] b = {70, 80, 90};
+
+        int[] c = new int[a.length + b.length];
 
 
-		
-		int a_len = a.length;
-		System.out.println(a_len);
-		
-		int b_len = b.length;
-		System.out.println(b_len);
-		
-		int c_len = a.length + b.length;  
-		System.out.println(c_len);
-		
-
-		int[] c= new int[c_len];
-		
-		
-		
-		for(int i=0; i<a_len; i++) {
-			c[i]=a[i];
-		}
-		for(int i=0; i<b_len; i++) {
-			c[a_len+i]=b[i];
-		}
-		for(int i=0; i<c_len; i++) {
-			System.out.print(c[i]+" ");
-		}
-		
-		
-		
-		
-		
-	}
-
+        for (int i = 0; i < a.length; i++) {
+            c[i] = a[i];
+        }
+        for (int i = 0; i < b.length; i++) {
+            c[a.length + i] = b[i];
+        }
+        for (int j : c) {
+            System.out.print(j + " ");
+        }
+    }
 }
