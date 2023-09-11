@@ -9,28 +9,28 @@ public class RemoveNumLetterAlphaFromString {
 	public static void main(String[] args) {
 
 		String str = "I123Love7You$%&@";
-		StringBuffer alphabetsBuild = new StringBuffer();
-		StringBuffer NumberBuild = new StringBuffer();
-		StringBuffer symbolBuild = new StringBuffer();
+		StringBuffer alphabets = new StringBuffer();
+		StringBuffer Numbers = new StringBuffer();
+		StringBuffer symbols = new StringBuffer();
 
 		// String[] newStr = str.split("");
 
 		for (int i = 0; i < str.length(); i++) {
 			char Fstr = str.charAt(i);
 			if (Character.isAlphabetic(Fstr)) {
-				alphabetsBuild.append(Fstr);
+				alphabets.append(Fstr);
 			} else if (Character.isDigit(Fstr)) {
-				NumberBuild.append(Fstr);
+				Numbers.append(Fstr);
 
 				
 			} else {
-				symbolBuild.append(Fstr);
+				symbols.append(Fstr);
 			}
 		}
 
-		System.out.println("Alphabets in string: " + alphabetsBuild.toString());
-		System.out.println("Numbers in string: " + NumberBuild.toString());
-		System.out.println("Special Symbols in string: " + symbolBuild.toString());
+		System.out.println("Alphabets in string: " + alphabets.toString());
+		System.out.println("Numbers in string: " + Numbers.toString());
+		System.out.println("Special Symbols in string: " + symbols.toString());
 
 	}
 
