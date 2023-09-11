@@ -13,7 +13,7 @@ public class ReadTextAsString {
 
 	public static void main(String[] args) throws Exception {
 		String data = readFileAsString(
-				"C:\\Users\\swapn\\eclipse-workspace\\mySelenium\\Selenium\\src\\JavaPrograms_Part2\\samplefile.txt");
+				"D:\\JavaInterviewPreperation\\src\\main\\java\\Programs\\javaPrograme2\\samplefile.txt");
 		System.out.println(data);
 	}
 }

@@ -19,6 +19,7 @@ public class RemoveDupCharFromString {
 
 		Set<Character> set = new HashSet<>();
 
+		String s = "";
 		StringBuffer dupChar = new StringBuffer();
 		
 
@@ -27,11 +28,13 @@ public class RemoveDupCharFromString {
 
 			if (set.add(fstr)) {
 				dupChar.append(fstr);
-
+				//s=s+fstr;
 			}
 
 		}
 		System.out.println(dupChar.toString());
+		//System.out.println(s);
+
 	}
 
 }
