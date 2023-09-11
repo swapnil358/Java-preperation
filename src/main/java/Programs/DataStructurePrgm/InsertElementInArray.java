@@ -11,7 +11,7 @@ public class InsertElementInArray {
 
 		int position = 3;
 		int element = 100;
-		
+
 
 		for (int i=a.length-1; i>position-1; i--) {
 
