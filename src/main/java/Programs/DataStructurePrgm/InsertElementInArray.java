@@ -11,13 +11,14 @@ public class InsertElementInArray {
 
 		int position = 3;
 		int element = 100;
+		
 
 		for (int i=a.length-1; i>position-1; i--) {
 
 			a[i] = a[i-1];
 
 		}
-		a[position-1]=element;
+		a[position - 1]=element;
 		
 		for(int j=0; j<a.length;j++) {
 			System.out.println(a[j]);
