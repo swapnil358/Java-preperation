@@ -49,7 +49,6 @@ public class RemoveDuplicateFromSortedArray {
         // Method 2 -----> without using temp array
 
         int a[] = {1, 2, 2, 3, 4, 5, 5};
-
         int j = 0;
 
         for (int i = 0; i < a.length - 1; i++) {
@@ -63,23 +62,18 @@ public class RemoveDuplicateFromSortedArray {
 
         for (int k = 0; k < j + 1; k++) {
             System.out.println(a[k]);
-
         }
-
     }
 
     public static void usingHashSet() {
-
         //This method is applicable for both sorted and unsorted array
 
         int a[] = {1, 2, 3, 2, 5, 4, 5};
 
         HashSet<Integer> hs = new HashSet<>();
-
         for (int i = 1; i < a.length - 1; i++) {
             hs.add(i);
         }
-
         for (int num : hs) {
             System.out.println(num);
         }
