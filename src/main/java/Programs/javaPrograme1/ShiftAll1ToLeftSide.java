@@ -28,10 +28,7 @@ public class ShiftAll1ToLeftSide {
 	
 	public static void method3(int[] array) {
         //This is correct solution
-		
 		//int array[] = { 1, 1, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3 };
-		
-		
         // Count the number of 1's in the array
 		   int leftPointer = 0;
 

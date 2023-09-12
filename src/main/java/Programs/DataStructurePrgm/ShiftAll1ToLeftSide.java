@@ -53,6 +53,8 @@ public class ShiftAll1ToLeftSide {
 	        }
 	    }
 
+
+
 	private static void method1(int[] a) {
 	//	int a[] = { 1, 2, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3 };
 

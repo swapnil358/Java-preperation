@@ -7,7 +7,8 @@ public class SecondLargestArray {
         System.out.println("method1");
         method1();
         System.out.println("method2");
-        method2();
+        int[] a = {9, 3, 5, 2, 8, 1};
+        method2(a);
     }
 
     private static void method1() {
@@ -29,21 +30,21 @@ public class SecondLargestArray {
         System.out.println("SecondLargestArray: " + a[1]);
     }
 
-    private static void method2() {
-        int[] a = {9, 3, 5, 2, 8, 1};
+    private static int method2(int a[]) {
         int largest = a[0];
         int secondLargest = a[0];
 
         for (int i = 0; i < a.length; i++) {
-            if (a[i] < largest) {
+            if (a[i] > largest) {
                 secondLargest = largest;
                 largest = a[i];
+                System.out.println("secondLargest is: " + secondLargest);
             } else if (a[i] > secondLargest && a[i] < largest) {
                 secondLargest = a[i];
             }
         }
-        System.out.println("largest is: " + largest);
-        System.out.println("secondLargest is: " + secondLargest);
+        return secondLargest;
+
     }
 
 
