@@ -1,6 +1,10 @@
 package Programs.DataStructurePrgm;
 
+import java.util.Arrays;
+
 public class ShiftAll1ToRightSideMaintainOrder {
+
+    //Easy
     public static void main(String[] args) {
         int[] array = {1, 1, 1, 4, 18, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3};
 
@@ -23,10 +27,7 @@ public class ShiftAll1ToRightSideMaintainOrder {
         }
 
         // Print the modified array
-        System.out.print("Modified Array: ");
-        for (int i = 0; i < arrSize; i++) {
-            System.out.print(result[i] + " ");
-        }
+        System.out.println(Arrays.toString(result));
 
     }
 }
