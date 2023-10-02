@@ -1,4 +1,4 @@
-package Programs.javaPrograme1;
+package LinkedInQuestions;
 
 //Java program: Input: a3b2c3, Output: aaabbccc.
 
@@ -16,10 +16,11 @@ public class ExpandingString {
 			
 			if(Character.isLetter(currentChar)) {
 				
-			int count = Character.getNumericValue(input.charAt(i+1));	
+			int count = Character.getNumericValue(input.charAt(i+1));
+			//here, getting numeric value present next to character
 			
 			for (int j = 0; j < count; j++) {
-				output = output+currentChar;
+				output = output + currentChar;
 			}
 			}
 	}
