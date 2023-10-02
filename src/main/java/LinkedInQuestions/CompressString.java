@@ -21,7 +21,7 @@ public class CompressString {
         char[] chars = s.toCharArray();
 
         for (char c : chars) {
-            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);  //charCount.getOrDefault(c, 0) retrieves the current count of character c or returns 0 if it's not already in the HashMap. We then increment this count by 1 and update the value in the HashMap.
         }
 
         for (Map.Entry<Character, Integer> entry : charCount.entrySet()) {
