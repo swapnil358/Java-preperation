@@ -26,9 +26,14 @@ public class programme1 {
 
         for (int i = 0; i <= 10; i++) {
             System.out.println(++i);
-
-
         }
-
     }
 }
+/**OUTPUT
+ * 1
+ * 3
+ * 5
+ * 7
+ * 9
+ * 11
+ */

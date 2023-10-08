@@ -1,6 +1,20 @@
 package MorganStanleyJavaInterview;
 
 //Please read the problem statement below
+/**
+ * Problem Statement:
+ *
+ * You are given three integers, i, j, and k. The goal is to calculate the sequence sum as described in the problem statement.
+ *
+ * The sequence sum is defined as follows:
+ *
+ * Start with the value i.
+ * Increment the value by 1 and add it to the sum.
+ * Continue incrementing the value by 1 and adding it to the sum until it reaches j.
+ * Once it reaches j, decrement the value by 1 and add it to the sum.
+ * Continue decrementing the value by 1 and adding it to the sum until it reaches k.
+ * In other words, the sequence sum involves summing a sequence of numbers starting from i, incrementing by 1 until j, and then decrementing by 1 until k.
+ */
 
 public class FindTheSequenceSum {
     public static void main(String[] args) {

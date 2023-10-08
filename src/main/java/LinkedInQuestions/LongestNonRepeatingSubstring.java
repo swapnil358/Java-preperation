@@ -5,7 +5,12 @@ import java.util.HashSet;
 
 //Simplest explanation ===> //https://youtu.be/sqxer2ynS6U
 
-public class LongestNonRepeatingCharacter {
+//  input = "abcdab";
+//  output = abcd
+
+
+
+public class LongestNonRepeatingSubstring {
 
     public static String longestSubstring(String s) {
 

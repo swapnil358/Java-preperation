@@ -22,6 +22,7 @@ public class CountTheNumberOfObject {
         CountTheNumberOfObject obj1 = new CountTheNumberOfObject();
         CountTheNumberOfObject obj2 = new CountTheNumberOfObject();
         CountTheNumberOfObject obj3 = new CountTheNumberOfObject();
+        CountTheNumberOfObject obj4 = new CountTheNumberOfObject();
 
         // Get the number of objects created
         int count = CountTheNumberOfObject.getObjectCount();
