@@ -8,7 +8,8 @@ public class CountFirstNonRepeatingCharacter {
     public static void main(String[] args) {
         String inputString = "aabbcdecc";
         char result = countFirstNonRepeatingChar(inputString);
-        System.out.println("First non-repeating character: " + result); // Output: c
+        System.out.println("First non-repeating character: " + result);
+        // Output: c
     }
 
     public static char countFirstNonRepeatingChar(String input) {
