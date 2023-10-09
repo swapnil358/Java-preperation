@@ -9,7 +9,6 @@ public class InterviewPgm {
 		String country = "I am from mumbai";
 		
 		String exp = country.replaceAll("I am from", "").trim();
-		
 
 		System.out.println(exp);
 
