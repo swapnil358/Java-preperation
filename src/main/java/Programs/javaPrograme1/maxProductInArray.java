@@ -29,11 +29,11 @@ public class maxProductInArray {
                 secondLowest = num;
             }
         }
-
         System.out.println("highest:" + highest);
         System.out.println("secondHighest:" + secondHighest);
         System.out.println("lowest:" + lowest);
         System.out.println("secondHighest:" + secondHighest);
+
         int product1 = highest * secondHighest;
         int product2 = lowest * secondLowest;
 
