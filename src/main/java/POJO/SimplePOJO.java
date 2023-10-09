@@ -77,7 +77,7 @@ class testPojo{
         SimplePOJO pojo = new SimplePOJO();
         pojo.setFirstName("Swapnil");
         pojo.setLastName("bodade");
-        pojo.setAge(17);
+        pojo.setAge(19);
         pojo.setEmail("swap@gmail.com");
 
         System.out.println(pojo.getFirstName());

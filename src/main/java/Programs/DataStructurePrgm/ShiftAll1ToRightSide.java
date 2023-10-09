@@ -12,6 +12,14 @@ public class ShiftAll1ToRightSide {
 
 	}
 
+	/**
+	 * This is exactly opposite to LeftSide,
+	 * Start rightPointer from the end
+	 * Iterate reverse (end -> start)
+	 * decrement rightPointer after swap
+	 * @param array
+	 */
+
 	public static void method3(int[] array) {
 		//This is correct solution
 		int rightPointer = array.length - 1;

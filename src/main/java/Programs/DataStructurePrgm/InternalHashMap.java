@@ -25,7 +25,9 @@ public class InternalHashMap {
 		map.put("aman",1);
 		map.put("naman", 2);
 		map.put("aman",3);
-		map.put("null",4); //we can not pass null key or value in HashTable
+		map.put(null,4); //we can not pass null key or value in HashTable
+		//nullPointerException
+		map.put("null",null);
 		map.put("chaman",5);
 		System.out.println(map);
 	}

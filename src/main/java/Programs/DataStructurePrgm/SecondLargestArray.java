@@ -30,6 +30,11 @@ public class SecondLargestArray {
         System.out.println("SecondLargestArray: " + a[1]);
     }
 
+    /**
+     * This is good example
+     * @param a
+     * @return
+     */
     private static int method2(int a[]) {
         int largest = a[0];
         int secondLargest = a[0];

@@ -4,7 +4,13 @@ import java.util.Arrays;
 
 public class ShiftAll1ToRightSideMaintainOrder {
 
-    //Easy
+    /**
+     * Easy
+     * Stapes:
+     * 1. Firstly move non 1's element in result array
+     * 2. Fill the right side of the result array with 1's [remember - iteration start from the end of result array]
+     * @param args
+     */
     public static void main(String[] args) {
         int[] array = {1, 1, 1, 4, 18, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3};
 

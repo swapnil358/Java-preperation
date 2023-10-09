@@ -25,31 +25,32 @@ public class ShiftAll1ToLeftSide {
 
 
 	}
-	
-	public static void method3(int[] array) {
-        //This is correct solution
+
+
+	/**
+	 * This is correct solution
+	 * @param arr { 1, 1, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3 };
+	 */
+	public static void method3(int[] arr) {
 		
-		//int array[] = { 1, 1, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3 };
-		
-		
-        // Count the number of 1's in the array
+        // Count the number of 1's in the arr
 		   int leftPointer = 0;
 
-	        for (int i = 0; i < array.length; i++) {
-	            if (array[i] == 1) {
+	        for (int i = 0; i < arr.length; i++) {
+	            if (arr[i] == 1) {
 	                // Swap 1 with the element at leftPointer
-	                int temp = array[i];
-	                array[i] = array[leftPointer];
-	                array[leftPointer] = temp;
+	                int temp = arr[i];
+	                arr[i] = arr[leftPointer];
+	                arr[leftPointer] = temp;
 
 	                leftPointer++;
 	            }
 	        }
 
-	        // Print the modified array
+	        // Print the modified arr
 	        System.out.print("Modified Array: ");
-	        for (int i = 0; i < array.length; i++) {
-	            System.out.print(array[i] + " ");
+	        for (int i = 0; i < arr.length; i++) {
+	            System.out.print(arr[i] + " ");
 	        }
 	    }
 

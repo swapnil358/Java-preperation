@@ -1,5 +1,7 @@
 package Programs.DataStructurePrgm;
 
+import java.util.Arrays;
+
 public class MergeTwoArrays {
 
     //https://youtu.be/JeQtPl3nxu4
@@ -19,6 +21,8 @@ public class MergeTwoArrays {
         for (int i = 0; i < b.length; i++) {
             c[a.length + i] = b[i];
         }
+
+        Arrays.sort(c);
         for (int j : c) {
             System.out.print(j + " ");
         }

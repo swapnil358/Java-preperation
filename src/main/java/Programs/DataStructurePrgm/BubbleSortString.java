@@ -6,7 +6,7 @@ public class BubbleSortString {
 
 	public static void main(String[] args) {
 
-		String[] a = { "Zebra", "Xero", "Apple", "Jack", "Nik" };
+		String[] a = { "Zebra", "Xero", "Apple", "Aapple", "Jack", "Nik" };
 
 		String temp;
 		for (int i = 0; i < a.length; i++) { // this for loop for iteration
