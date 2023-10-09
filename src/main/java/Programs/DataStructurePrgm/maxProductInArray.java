@@ -1,4 +1,4 @@
-package Programs.javaPrograme1;
+package Programs.DataStructurePrgm;
 
 
 //pgm to find the maximum product (i.e multiplication) in array
