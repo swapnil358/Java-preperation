@@ -5,36 +5,34 @@ import java.util.Map;
 
 public class CountFirstNonRepeatingCharacter {
 
-	public static char countFirstNonRepeatingChar(String input) {
-		// Create a HashMap to store character counts
-		Map<Character, Integer> charCount = new HashMap<>();
+    public static void main(String[] args) {
+        String inputString = "aabbcdecc";
+        char result = countFirstNonRepeatingChar(inputString);
+        System.out.println("First non-repeating character: " + result); // Output: c
+    }
 
-		// Populate the charCount map
-		for (char c : input.toCharArray()) {
-			if (charCount.containsKey(c)) {
-				charCount.put(c, charCount.get(c) + 1);
-			} else {
-				charCount.put(c, 1);
-			}
-		}
+    public static char countFirstNonRepeatingChar(String input) {
+        // Create a HashMap to store character counts
+        Map<Character, Integer> charCount = new HashMap<>();
 
-		// Iterate through the string to find the first non-repeating character
-		for (char c : input.toCharArray()) {
-			if (charCount.get(c) == 1) {
-				return c;
-			}
-		}
+        // Populate the charCount map
+        for (char c : input.toCharArray()) {
+            if (charCount.containsKey(c)) {
+                charCount.put(c, charCount.get(c) + 1);
+            } else {
+                charCount.put(c, 1);
+            }
+        }
 
-		// If no non-repeating character found, return 0 or any special value to
-		// indicate no result
-		// In this case, let's return a space character ' ' to indicate no result.
-		return 0;
-	}
-
-	public static void main(String[] args) {
-		String inputString = "aabbcdecc";
-		char result = countFirstNonRepeatingChar(inputString);
-		System.out.println("First non-repeating character: " + result); // Output: c
-	}
-
+        // Iterate through the string to find the first non-repeating character
+        for (char c : input.toCharArray()) {
+            if (charCount.get(c) == 1) {
+                return c;
+            }
+        }
+        // If no non-repeating character found, return 0 or any special value to
+        // indicate no result
+        // In this case, let's return a space character ' ' to indicate no result.
+        return 0;
+    }
 }
