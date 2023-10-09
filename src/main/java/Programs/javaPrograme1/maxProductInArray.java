@@ -30,14 +30,14 @@ public class maxProductInArray {
             }
         }
 
-        System.out.println(highest);
-        System.out.println(secondHighest);
-        System.out.println(lowest);
-        System.out.println(secondHighest);
+        System.out.println("highest:" + highest);
+        System.out.println("secondHighest:" + secondHighest);
+        System.out.println("lowest:" + lowest);
+        System.out.println("secondHighest:" + secondHighest);
         int product1 = highest * secondHighest;
         int product2 = lowest * secondLowest;
 
-        System.out.println(Math.max(product1, product2));
+        System.out.println("Maximum product is" + ":" + Math.max(product1, product2));
     }
 
 
