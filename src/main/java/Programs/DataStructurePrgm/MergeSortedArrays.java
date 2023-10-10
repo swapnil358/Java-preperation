@@ -1,4 +1,4 @@
-package Programs.javaPrograme1;
+package Programs.DataStructurePrgm;
 
 public class MergeSortedArrays {
 	public static void main(String[] args) {
