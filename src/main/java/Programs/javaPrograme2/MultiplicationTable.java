@@ -2,16 +2,16 @@ package Programs.javaPrograme2;
 
 public class MultiplicationTable {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		int num = 8;
+        int num = 8;
 
-		for (int i = 0; i <= num; i++) {
-			if(num*i != 0) {
-				 System.out.print(num * i +" ");	
-			}
-			
-		}
+        for (int i = 0; i <= num; i++) {
+            if (num * i != 0) {
+                System.out.print(num * i + " ");
+            }
 
-	}
+        }
+
+    }
 }

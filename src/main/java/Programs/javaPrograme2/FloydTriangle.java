@@ -26,12 +26,11 @@ public class FloydTriangle {
     }
 
     public static void treePattern() {
-
         int n = 10;
-        int num;
+
         for (int i = 0; i < n; i++) // outer loop for rows
         {
-            num = 1;
+          int num = 1;
             for (int j = 0; j <= i; j++) // inner loop for rows
             {
                 // printing num with a space
