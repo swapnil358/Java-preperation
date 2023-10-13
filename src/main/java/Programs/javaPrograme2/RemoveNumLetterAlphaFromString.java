@@ -12,7 +12,7 @@ public class RemoveNumLetterAlphaFromString {
 		StringBuffer alphabets = new StringBuffer();
 		StringBuffer Numbers = new StringBuffer();
 		StringBuffer symbols = new StringBuffer();
-		
+
 		for (int i = 0; i < str.length(); i++) {
 			char Fstr = str.charAt(i);
 			if (Character.isAlphabetic(Fstr)) {
