@@ -3,10 +3,13 @@ package Programs.javaPrograme1;
 import java.util.HashMap;
 import java.util.Map;
 
+
+//String inputString = "geeksforgeeks";
+// output = f
 public class CountFirstNonRepeatingCharacter {
 
     public static void main(String[] args) {
-        String inputString = "aabbcdecc";
+        String inputString = "geeksforgeeks";  //
         char result = countFirstNonRepeatingChar(inputString);
         System.out.println("First non-repeating character: " + result);
         // Output: c
