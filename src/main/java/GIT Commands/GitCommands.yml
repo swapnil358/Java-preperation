@@ -1,0 +1,63 @@
+#Repository Initialization and Cloning:
+git init: Initializes a new Git repository in the current directory.
+git clone <repository_url>: Clones a remote repository to your local machine.
+git remote -v: Lists the remote repositories associated with your local repository.
+
+#Basic Workflow:
+git add <file(s)>: Stages changes for commit.
+git commit -m "Commit message": Records the staged changes with a descriptive commit message.
+git status: Shows the status of your working directory, including untracked, modified, and staged files.
+
+
+#Branches:
+git branch: Lists all branches in the repository and indicates the current branch with an asterisk.
+git branch <branch_name>: Creates a new branch with the specified name.
+git checkout <branch_name>: Switches to an existing branch.
+git checkout -b <new_branch>: Creates a new branch and immediately switches to it.
+git merge <branch_name>: Merges changes from the specified branch into the current branch.
+git pull: Fetches changes from a remote repository and merges them into the current branch.
+git push: Pushes committed changes to a remote repository.
+
+#Commit History:
+git log: Displays the commit history of the current branch.
+git log --oneline: Shows a simplified commit history with one line per commit.
+git log --graph --oneline --all: Visualizes the commit history with branches.
+
+#Remote Repositories:
+git fetch: Fetches changes from a remote repository but doesn't merge them.
+git push origin --delete <branch_name>: Deletes a remote branch.
+git pull --rebase: Fetches changes and rebases your changes on top.
+git remote add <name> <url>: Adds a new remote repository reference.
+git remote show <name>: Shows information about a remote repository.
+
+#Stashing Changes:
+git stash: Temporarily saves changes that you want to set aside.
+git stash list: Lists all stashes.
+git stash apply: Applies the most recent stash.
+git stash pop: Applies and removes the most recent stash.
+
+#Working with Tags:
+git tag <tag_name>: Creates a lightweight tag at the current commit.
+git tag -a <tag_name> -m "Tag message": Creates an annotated tag with a message.
+git show <tag_name>: Displays information about a specific tag.
+
+#Reset and Revert:
+git reset <file(s)>: Unstages changes from the staging area.
+git reset --hard HEAD: Discards all changes in your working directory and staging area.
+git revert <commit_hash>: Creates a new commit that undoes changes introduced by a specific commit.
+
+#Advanced Branch Operations:
+git branch -d <branch_name>: Deletes a local branch.
+git branch -m <new_name>: Renames the current branch.
+git cherry-pick <commit_hash>: Applies changes from a specific commit to the current branch.
+git rebase <base_branch>: Replays commits from the current branch on top of another branch.
+
+#Collaboration:
+git remote -v: Lists remote repositories and their URLs.
+git pull <remote> <branch>: Fetches and merges changes from a specific remote and branch.
+git push <remote> <branch>: Pushes changes to a specific remote and branch.
+
+#Ignoring and Cleaning:
+.gitignore: Create and edit a .gitignore file to specify files and directories that Git should ignore.
+git clean -n: Dry run to show what files would be removed by git clean -f.
+git clean -f: Removes untracked files and directories as specified in the .gitignore file.
