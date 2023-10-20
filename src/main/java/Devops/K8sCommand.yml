@@ -1,0 +1,96 @@
+
+
+kubectl get: This command is used to list resources in your cluster.
+  For example, kubectl get pods will list all the pods in the current namespace.
+
+kubectl create: You can use this command to create resources like pods, services, or deployments.
+  For instance, kubectl create -f my-pod.yaml will create a pod based on the configuration in the my-pod.yaml file.
+
+kubectl apply: Similar to kubectl create, but it can be used to create or update resources.
+  It's useful for managing configuration changes over time. For example, kubectl apply -f my-pod.yaml will create or update the pod as needed.
+
+kubectl describe: To get more details about a resource, you can use kubectl describe.
+  For example, kubectl describe pod my-pod will provide detailed information about the specified pod.
+
+kubectl delete: This command is used to delete resources.
+  You can delete a resource by specifying its type and name, like kubectl delete pod my-pod.
+
+kubectl logs: To view the logs of a pod, you can use kubectl logs.
+  For example, kubectl logs my-pod will display the logs for the my-pod pod.
+
+kubectl exec: If you need to run a command inside a running pod, you can use kubectl exec.
+  For instance, kubectl exec -it my-pod -- /bin/bash opens a shell in the my-pod for interactive troubleshooting.
+
+kubectl port-forward: This command allows you to forward a local port to a port on a pod.
+  For example, kubectl port-forward my-pod 8080:80 forwards port 8080 on your local machine to port 80 on my-pod.
+
+
+
+##Here are 20 commonly used Kubernetes commands to help you manage your Kubernetes cluster and applications:
+
+  Create a Deployment: Deploy an application using a deployment controller.
+  kubectl create deployment deployment_name --image=image_name
+
+  List Deployments: View a list of deployments in the current namespace.
+  kubectl get deployments
+
+  Scale a Deployment: Adjust the number of replicas for a deployment.
+  kubectl scale deployment deployment_name --replicas=3
+
+  Expose a Deployment: Create a service to expose a deployment.
+  kubectl expose deployment deployment_name --port=80 --type=NodePort
+
+  List Pods: List all pods in the current namespace.
+  kubectl get pods
+
+  Get Pod Logs: Display logs from a specific pod.
+  kubectl logs pod_name
+
+  Describe Pod: Get detailed information about a pod.
+  kubectl describe pod pod_name
+
+  Create a ConfigMap: Create a configuration map to store application configuration.
+  kubectl create configmap config_name --from-literal=key1=value1 --from-literal=key2=value2
+
+  Create a Secret: Create a secret to store sensitive data.
+  kubectl create secret generic secret_name --from-literal=key1=value1 --from-literal=key2=value2
+
+  Apply Configuration: Apply configuration from a file.
+  kubectl apply -f file.yaml
+
+
+  Delete a Resource: Delete a resource specified in a YAML file.
+  kubectl delete -f file.yaml
+
+
+  List Services: List all services in the current namespace.
+  kubectl get services
+
+
+  Get Service Details: Get detailed information about a service.
+  kubectl describe service service_name
+
+
+  List Nodes: List all nodes in the cluster.
+  kubectl get nodes
+
+  Create a Namespace: Create a new namespace for organizing resources.
+  kubectl create namespace namespace_name
+
+  Switch Namespace: Change the active namespace for subsequent commands.
+  kubectl config set-context --current --namespace=namespace_name
+
+
+  Port Forward: Forward a local port to a pod for debugging.
+  kubectl port-forward pod_name local_port:remote_port
+
+  Rollout Status: Check the rollout status of a deployment.
+  kubectl rollout status deployment/deployment_name
+
+
+  Exec into a Pod: Start an interactive shell in a running pod.
+  kubectl exec -it pod_name -- /bin/sh
+
+
+  Delete a Resource: Delete a resource like a pod or deployment.
+  kubectl delete pod/deployment_name

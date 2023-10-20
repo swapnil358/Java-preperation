@@ -1,0 +1,133 @@
+docker pull: This command is used to download a Docker image from a registry.
+  For example, docker pull nginx will fetch the official Nginx image from Docker Hub.
+
+docker run: To start a new container from an image, you can use docker run.
+  For instance, docker run -d -p 8080:80 nginx will start an Nginx web server container in the background, mapping port 8080 on your host to port 80 in the container.
+
+docker ps: This command lists all running containers.
+  Add the -a flag to see all containers, including the ones that are stopped.
+
+docker stop: To stop a running container, you can use docker stop followed by the container ID or name.
+  For example, docker stop my-container will stop a container named "my-container."
+
+docker start: If you need to restart a stopped container, use docker start followed by the container ID or name.
+
+docker rm: To remove a stopped container, use docker rm followed by the container ID or name.
+  For example, docker rm my-container will delete a container named "my-container."
+
+docker images: This command lists all the images you have downloaded or built on your system.
+
+docker rmi: To remove an image, you can use docker rmi followed by the image ID or name.
+  For example, docker rmi my-image will delete an image named "my-image."
+
+docker exec: If you want to run a command inside a running container, use docker exec.
+  For instance, docker exec -it my-container sh will open a shell inside the "my-container" for interactive use.
+
+docker build: To create a new Docker image from a Dockerfile, use the docker build command.
+  For example, docker build -t my-image . will build an image using the Dockerfile in the current directory and tag it as "my-image."
+
+
+
+Certainly! Here are 20 commonly used Docker commands to help you manage containers and images:
+
+1. **Pull an Image**: Download a Docker image from a registry.
+  ```
+  docker pull image_name
+  ```
+
+2. **Run a Container**: Start a new container from an image.
+  ```
+  docker run [options] image_name [command]
+  ```
+
+3. **List Running Containers**: View a list of running containers.
+  ```
+  docker ps
+  ```
+
+4. **List All Containers**: View a list of all containers, including stopped ones.
+  ```
+  docker ps -a
+  ```
+
+5. **Stop a Container**: Gracefully stop a running container.
+  ```
+  docker stop container_id
+  ```
+
+6. **Start a Stopped Container**: Restart a stopped container.
+  ```
+  docker start container_id
+  ```
+
+7. **Remove a Container**: Delete a stopped container.
+  ```
+  docker rm container_id
+  ```
+
+8. **Remove an Image**: Delete a Docker image.
+  ```
+  docker rmi image_name
+  ```
+
+9. **Inspect Container**: View detailed information about a container.
+  ```
+  docker inspect container_id
+  ```
+
+10. **View Container Logs**: Display the logs of a container.
+  ```
+  docker logs container_id
+  ```
+
+11. **Execute Command in Container**: Run a one-time command in a running container.
+  ```
+  docker exec [options] container_id command
+  ```
+
+12. **Build an Image**: Build a Docker image from a Dockerfile.
+  ```
+  docker build [options] -t image_name path_to_dockerfile
+  ```
+
+13. **Tag an Image**: Assign a tag to an image.
+  ```
+  docker tag source_image:tag target_image:tag
+  ```
+
+14. **Create a Docker Network**: Create a custom network for container communication.
+  ```
+  docker network create network_name
+  ```
+
+15. **List Docker Networks**: List available Docker networks.
+  ```
+  docker network ls
+  ```
+
+16. **Attach to a Network**: Connect a container to a specific network.
+  ```
+  docker network connect network_name container_id
+  ```
+
+17. **Inspect Docker Network**: View details about a Docker network.
+  ```
+  docker network inspect network_name
+  ```
+
+18. **Remove a Docker Network**: Delete a Docker network.
+  ```
+  docker network rm network_name
+  ```
+
+19. **Pause a Container**: Pause the execution of a running container.
+  ```
+  docker pause container_id
+  ```
+
+20. **Unpause a Container**: Resume a paused container.
+  ```
+  docker unpause container_id
+  ```
+
+  These commands should cover many of the common tasks you'll encounter when working with Docker containers and images. Remember to replace `image_name`, `container_id`, and other placeholders with the appropriate values when using these commands.
