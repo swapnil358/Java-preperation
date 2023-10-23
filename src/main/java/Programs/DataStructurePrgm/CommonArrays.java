@@ -39,7 +39,7 @@ public class CommonArrays {
 			}
 
 		}
-		System.out.println("comman elements are: "+arr);
+		System.out.println("common elements are: "+arr);
 
 	}
 

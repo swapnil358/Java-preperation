@@ -59,9 +59,6 @@ public class StringManipulation {
 		System.out.println(x+y+a+b);
 		System.out.println(a+b+x+y);
 		System.out.println(x+y+(a+b));
-		
-		
-		
 
 	}
 

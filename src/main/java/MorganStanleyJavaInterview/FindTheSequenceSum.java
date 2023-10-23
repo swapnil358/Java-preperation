@@ -4,7 +4,8 @@ package MorganStanleyJavaInterview;
 /**
  * Problem Statement:
  *
- * You are given three integers, i, j, and k. The goal is to calculate the sequence sum as described in the problem statement.
+ * You are given three integers, i, j, and k. The goal is to calculate the sequence sum as described
+ * in the problem statement.
  *
  * The sequence sum is defined as follows:
  *
