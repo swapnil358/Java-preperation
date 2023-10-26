@@ -1,0 +1,135 @@
+
+Here are examples of these commonly used 40 Linux commands:
+
+
+    ls: List files and directories in the current directory.
+
+    cd: Change the current working directory.
+      cd /path/to/directory
+
+    pwd: Print the current working directory.
+      pwd
+
+    touch: Create an empty file.
+      touch example.txt
+
+    mkdir: Create a new directory.
+      mkdir myfolder
+
+    rmdir: Remove an empty directory.
+      rmdir myfolder
+
+    rm: Remove files or directories.
+      rm file.txt
+      rm -r directory
+
+    cp: Copy files and directories.
+      cp file.txt /path/to/destination/
+
+    mv: Move or rename files and directories.
+      mv oldfile.txt newfile.txt
+      mv file.txt /path/to/destination/
+
+    cat: Display the contents of a file.
+      cat file.txt
+
+    more/less: View the contents of a file one page at a time.
+      more file.txt
+      less file.txt
+
+    head: Display the beginning of a file.
+      head file.txt
+
+    tail: Display the end of a file.
+      tail file.txt
+
+    grep: Search for text patterns in files.
+      grep "pattern" file.txt
+
+    find: Search for files and directories.
+      find /path/to/search -name "filename"
+
+    nano/vim/emacs: Text editors for creating and editing files.
+      nano newfile.txt
+      vim newfile.txt
+      emacs newfile.txt
+
+    ps: List running processes.
+      ps
+
+    kill: Terminate processes.
+      kill process_id
+
+    top/htop: Monitor system processes and resource usage.
+      top
+      htop
+
+    df: Display disk space usage.
+      df -h
+
+    du: Estimate file and directory space usage.
+      du -sh /path/to/directory
+
+    tar: Archive and compress files.
+      tar -czvf archive.tar.gz file1 file2
+
+    gzip/gunzip: Compress and decompress files.
+      gzip file.txt
+      gunzip file.txt.gz
+
+    unzip: Extract files from ZIP archives.
+      unzip archive.zip
+
+    wget/curl: Download files from the internet.
+      wget https://example.com/file.txt
+      curl -O https://example.com/file.txt
+
+    ping: Test network connectivity.
+      ping google.com
+
+    ifconfig/ip: Network interface configuration.
+      ifconfig
+      ip address show
+
+    ssh: Securely connect to remote servers.
+      ssh user@remote_server
+
+    scp: Securely copy files to/from remote servers.
+      scp file.txt user@remote_server:/path/to/destination/
+
+    chmod: Change file permissions.
+      chmod 755 file.txt
+
+    chown: Change file ownership.
+      chown user:group file.txt
+
+    useradd/userdel: Add or delete user accounts.
+      useradd newuser
+      userdel existinguser
+
+    passwd: Change user passwords.
+      passwd username
+
+    su/sudo: Execute commands as a different user or with elevated privileges.
+      su - username
+      sudo command
+
+    date: Display or set the system date and time.
+      date
+      date -s "2023-10-27 10:30:00"
+
+    cal: Display a calendar.
+      cal
+
+    history: Show the command history.
+      history
+
+    alias: Create custom command shortcuts.
+      alias ll='ls -l'
+
+    zip: Create ZIP archives.
+      zip archive.zip file1 file2
+
+
+    ssh-keygen: Generate SSH key pairs for secure authentication.
+      ssh-keygen -t rsa
