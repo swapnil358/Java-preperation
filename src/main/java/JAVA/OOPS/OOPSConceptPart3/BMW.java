@@ -8,6 +8,7 @@ public class BMW extends Car {   //It is called Has-a relationship
 	
 	/*Method Overriding - When same method present in Parent as well as in Child class with same name and same number of arguments is called 
 	method overriding*/
+	//It also called Runtime polymorphism
 	
 	@Override
 	public void tyre() {

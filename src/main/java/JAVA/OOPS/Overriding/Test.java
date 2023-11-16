@@ -14,7 +14,7 @@ public class Test {
 		obj1.p1();
 		
 
-		Parent obj3 = new Child(); //only parent method will be called
+		Parent obj3 = new Child(); //only parent method will be called ...TopCasting
 		obj3.p();
 		obj3.p1();
 		

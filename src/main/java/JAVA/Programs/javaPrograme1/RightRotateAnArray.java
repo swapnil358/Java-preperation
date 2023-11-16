@@ -19,7 +19,7 @@ public class RightRotateAnArray {
 		
 		
 		
-		int n=3;
+		int n=2;
 		
 		for (int j = 1; j <= n; j++) {
 			

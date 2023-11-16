@@ -1,9 +1,9 @@
 package JAVA.OOPS.OOPSConceptPart3;
 
 //ConnectWise interview question
-//I have interface, it has 3 method, but i want to override only two method, i dont want to override 3rd method
+//I have interfaced, it has 3 method, but I want to override only two method, I don't want to override 3rd method
 //Answer - Make third method as default method, you can override whenever and whichever child class you want.
-//Also you can make child class as abstract class, then it will not ask you to implement any interface methods
+//Also, you can make child class as abstract class, then it will not ask you to implement any interface methods
 
 public interface interviewConnectWise {
 

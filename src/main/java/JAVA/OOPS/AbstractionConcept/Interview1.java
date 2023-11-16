@@ -12,7 +12,7 @@ public abstract class Interview1 {
 	}
 	
 	private Interview1(int a) {
-		System.out.println("Parametarised constructor");
+		System.out.println("Parametrised constructor");
 	}
 
 	

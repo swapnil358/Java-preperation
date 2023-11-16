@@ -28,10 +28,12 @@ constructor to the caller .
 public class ConstructorConcept {
 
 	public ConstructorConcept() {
+
 		System.out.println("Default Constructor");
 	}
 
 	public ConstructorConcept(int i) {
+
 		System.out.println("One para constructor" + i);
 	}
 
