@@ -51,6 +51,8 @@ git branch -d <branch_name>: Deletes a local branch.
 git branch -m <new_name>: Renames the current branch.
 git cherry-pick <commit_hash>: Applies changes from a specific commit to the current branch.
 git rebase <base_branch>: Replays commits from the current branch on top of another branch.
+  git rebase main
+  This command takes the changes from the main branch and applies your commits on top of them.
 
 #Collaboration:
 git remote -v: Lists remote repositories and their URLs.
