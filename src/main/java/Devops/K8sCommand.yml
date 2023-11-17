@@ -1,4 +1,4 @@
-
+  https://everythingautomation.blogspot.com/search/label/Kubernetes
 
 kubectl get: This command is used to list resources in your cluster.
   For example, kubectl get pods will list all the pods in the current namespace.

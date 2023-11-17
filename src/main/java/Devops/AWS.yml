@@ -1,0 +1,121 @@
+Certainly! Here are 30 questions related to AWS (Amazon Web Services) along with brief answers:
+
+### General AWS Knowledge:
+
+  1. **What is AWS?**
+  - **Answer:** AWS (Amazon Web Services) is a cloud computing platform provided by Amazon that offers a wide range of services, including computing power, storage, databases, machine learning, and more.
+
+  2. **Explain the key components of AWS.**
+  - **Answer:** Key components include EC2 (Elastic Compute Cloud), S3 (Simple Storage Service), RDS (Relational Database Service), Lambda, IAM (Identity and Access Management), and many more.
+
+  3. **What is the AWS Free Tier?**
+  - **Answer:** The AWS Free Tier is a limited free offering by AWS that provides a set of AWS services at no cost for a limited time, allowing users to explore and experiment with AWS services.
+
+  ### Compute Services:
+
+  4. **What is Amazon EC2?**
+  - **Answer:** Amazon EC2 (Elastic Compute Cloud) is a web service that provides resizable compute capacity in the cloud. It allows users to run virtual servers, known as instances.
+
+  5. **Explain the difference between On-Demand and Reserved Instances in EC2.**
+  - **Answer:** On-Demand Instances are pay-as-you-go with no upfront costs, while Reserved Instances involve a one-time upfront payment for a significant discount on the hourly charge.
+
+  6. **What is AWS Lambda?**
+  - **Answer:** AWS Lambda is a serverless compute service that lets users run code without provisioning or managing servers. It automatically scales and executes code in response to events.
+
+  ### Storage Services:
+
+  7. **What is Amazon S3?**
+  - **Answer:** Amazon S3 (Simple Storage Service) is an object storage service that offers scalable, durable, and low-latency storage for storing and retrieving any amount of data.
+
+  8. **Explain the purpose of Amazon EBS (Elastic Block Store).**
+  - **Answer:** Amazon EBS provides block-level storage volumes for use with EC2 instances. It allows users to persistently store data and attach volumes to instances.
+
+  9. **What is AWS Glacier used for?**
+  - **Answer:** AWS Glacier is a low-cost storage service designed for archiving and long-term backup of infrequently accessed data.
+
+  ### Database Services:
+
+  10. **What is Amazon RDS?**
+  - **Answer:** Amazon RDS (Relational Database Service) is a managed relational database service that supports multiple database engines, including MySQL, PostgreSQL, and Oracle.
+
+  11. **Explain the difference between Amazon DynamoDB and Amazon RDS.**
+  - **Answer:** DynamoDB is a NoSQL database service for applications requiring single-digit millisecond latency, while RDS is a managed relational database service for traditional SQL databases.
+
+  ### Networking:
+
+  12. **What is Amazon VPC?**
+  - **Answer:** Amazon VPC (Virtual Private Cloud) allows users to provision a logically isolated section of the AWS Cloud where they can launch AWS resources in a virtual network.
+
+  13. **Explain the purpose of Amazon Route 53.**
+  - **Answer:** Amazon Route 53 is a scalable and highly available domain name system (DNS) web service, providing domain registration, DNS routing, and health checking.
+
+  ### Security and Identity:
+
+  14. **What is AWS IAM?**
+  - **Answer:** AWS Identity and Access Management (IAM) is a service that enables users to securely control access to AWS resources by managing users, groups, and permissions.
+
+  15. **What is AWS Key Management Service (KMS)?**
+  - **Answer:** AWS KMS is a managed service that makes it easy to create and control customer master keys (CMKs) used to encrypt data stored in AWS services.
+
+  ### Monitoring and Logging:
+
+  16. **What is Amazon CloudWatch?**
+  - **Answer:** Amazon CloudWatch is a monitoring and observability service that provides real-time insights into AWS resources, applications, and services.
+
+  17. **Explain the purpose of AWS CloudTrail.**
+  - **Answer:** AWS CloudTrail is a service that enables governance, compliance, and operational auditing of AWS account activities by providing a history of AWS API calls.
+
+  ### AWS Deployment and Automation:
+
+  18. **What is AWS Elastic Beanstalk?**
+  - **Answer:** AWS Elastic Beanstalk is a fully managed service that makes it easy to deploy and run applications in multiple languages.
+
+  19. **What is AWS CloudFormation?**
+  - **Answer:** AWS CloudFormation is a service that allows users to define and provision AWS infrastructure as code, using templates to automate the deployment of resources.
+
+  ### Serverless:
+
+  20. **What is AWS Step Functions?**
+  - **Answer:** AWS Step Functions is a serverless function orchestrator that allows users to coordinate multiple AWS services into serverless workflows.
+
+  21. **Explain the concept of AWS SAM (Serverless Application Model).**
+  - **Answer:** AWS SAM is an open-source framework for building serverless applications. It extends AWS CloudFormation to provide a simplified way of defining the Amazon API Gateway APIs, AWS Lambda functions, and Amazon DynamoDB tables needed by serverless applications.
+
+  ### Machine Learning:
+
+  22. **What is Amazon SageMaker?**
+  - **Answer:** Amazon SageMaker is a fully managed service that enables users to build, train, and deploy machine learning models quickly and at scale.
+
+  23. **Explain the purpose of AWS DeepLens.**
+  - **Answer:** AWS DeepLens is a deep learning-enabled video camera for developers. It allows for experimenting with machine learning models locally on the device.
+
+  ### AWS Global Infrastructure:
+
+  24. **What are AWS Regions and Availability Zones?**
+  - **Answer:** AWS Regions are separate geographic areas, and each Region consists of multiple isolated locations known as Availability Zones, providing redundancy and fault tolerance.
+
+  ### Cost Management:
+
+  25. **How can users estimate
+
+  costs in AWS?**
+  - **Answer:** AWS provides the AWS Pricing Calculator, allowing users to estimate costs based on selected services, configurations, and usage patterns.
+
+  ### Advanced Topics:
+
+  26. **What is AWS Lambda Layers?**
+  - **Answer:** AWS Lambda Layers allow users to centrally manage code and data that is shared across multiple functions.
+
+  27. **Explain the concept of AWS Organizations.**
+  - **Answer:** AWS Organizations helps in consolidating multiple AWS accounts into an organization that you create and centrally manage.
+
+  28. **What is Amazon EKS (Elastic Kubernetes Service)?**
+  - **Answer:** Amazon EKS is a fully managed service that makes it easy to deploy, manage, and scale containerized applications using Kubernetes.
+
+  29. **How does AWS handle data transfer between Regions?**
+  - **Answer:** Data transfer between AWS Regions is considered as data transfer out, and it incurs additional costs. Users can optimize costs by using AWS Direct Connect or AWS Global Accelerator.
+
+  30. **Explain the purpose of Amazon Elastic File System (EFS).**
+  - **Answer:** Amazon EFS is a scalable file storage service designed for use with AWS Cloud services and on-premises resources. It provides scalable file storage for use with Amazon EC2 instances in the AWS Cloud.
+
+  These questions cover a broad range of AWS services and concepts, providing a comprehensive overview of the AWS ecosystem.
