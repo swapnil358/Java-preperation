@@ -13,7 +13,7 @@ public class CheckEqualArray {
 
     private static void method1() {
         int[] a1 = {10, 20, 30, 40};
-        int[] a2 = {10, 20, 40, 40, 100};
+        int[] a2 = {10, 20, 40, 40};
 
         boolean areEqual = true; // Assume equality until proven otherwise
 

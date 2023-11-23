@@ -5,21 +5,25 @@ import java.util.Scanner;
 public class CapitaliseFirstLetter {
 
 	public static void main(String[] args) {
-
-		Scanner in = new Scanner(System.in);
-		String line = in.nextLine();
-		Scanner lineScan = new Scanner(line);
-		
-		String upper_case_line = "";
-		
-		while (lineScan.hasNext()) {
-			String word = lineScan.next();
-			String upper = Character.toUpperCase(word.charAt(0)) + word.substring(1);
-
-			upper_case_line += upper + " ";
+			String input = "java programming is fun";
+			String result = capitalizeFirstLetter(input);
+			System.out.println(result);
 		}
-		System.out.println(upper_case_line);
 
-	}
+		private static String capitalizeFirstLetter(String input) {
+			StringBuilder result = new StringBuilder();
 
+			// Split the input string into words
+			String[] words = input.split("\\s+");
+
+			// Capitalize the first letter of each word and append to the result
+			for (String word : words) {
+				if (word.length() > 0) {
+					char firstChar = Character.toUpperCase(word.charAt(0));
+					result.append(firstChar).append(word.substring(1)).append(" ");
+				}
+			}
+
+			return result.toString().trim(); // Trim to remove the trailing space
+		}
 }

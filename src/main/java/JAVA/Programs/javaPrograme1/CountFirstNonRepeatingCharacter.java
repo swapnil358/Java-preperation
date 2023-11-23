@@ -27,6 +27,7 @@ public class CountFirstNonRepeatingCharacter {
                 charCount.put(c, 1);
             }
         }
+        System.out.println(charCount);
 
         // Iterate through the string to find the first non-repeating character
         for (char c : input.toCharArray()) {

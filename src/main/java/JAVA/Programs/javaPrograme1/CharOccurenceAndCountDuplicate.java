@@ -20,19 +20,14 @@ public class CharOccurenceAndCountDuplicate {
 		}
 		System.out.println(Counter);
 
-		
+		//print only more than 1 repetitive character
 		  Set<Character> SetString = Counter.keySet();
-		  
 		  System.out.println("Dup char: "+" " + inputString);
-		  
-		  for (Character s : SetString) {
-		  
-		  if (Counter.get(s) > 1) {
-		  
+
+		for (Character s : SetString) {
+			if (Counter.get(s) > 1) {
 		  System.out.println(s + " : " + Counter.get(s));
-		  
 		  }
-		  
 		  }
 		 
 	}
