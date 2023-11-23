@@ -12,7 +12,7 @@ package JAVA.Programs.javaPrograme1;
  * The final result is then printed.
  */
 
-public class ReverFirstAndLastCharacter {
+public class InterChangeFirstAndLastCharacterOfWord {
         public static void main(String[] args) {
             String input = "name king";
             String result = reverseInitialAndEndCharacters(input);
