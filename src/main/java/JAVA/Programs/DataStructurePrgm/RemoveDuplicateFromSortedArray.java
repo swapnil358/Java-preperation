@@ -30,7 +30,7 @@ public class RemoveDuplicateFromSortedArray {
         int j = 0;
         int lastElement = a[a.length - 1];
 
-        for (int i = 0; i < a.length - 1; i++) {
+        for (int i = 0; i < a.length-1; i++) {
             if (a[i] != a[i + 1]) {
                 temp[j] = a[i];
                 j++;
@@ -51,6 +51,8 @@ public class RemoveDuplicateFromSortedArray {
         int a[] = {1, 2, 2, 3, 4, 5, 5};
         int j = 0;
 
+        int lastElement = a[a.length - 1];
+
         for (int i = 0; i < a.length - 1; i++) {
             if (a[i] != a[i + 1]) {
                 a[j] = a[i];
@@ -58,7 +60,8 @@ public class RemoveDuplicateFromSortedArray {
 
             }
         }
-        a[j] = a[a.length - 1]; // inserting last element
+
+        a[j] = lastElement; // inserting last element
 
         for (int k = 0; k < j + 1; k++) {
             System.out.println(a[k]);

@@ -252,7 +252,7 @@ Self Join:
 
 Outer Join:
 
-  62Display employee details with all departments.:
+  62. Display employee details with all departments.:
   SQL > Select last_name, d.department_id, d.name from employee e, department d where e.department_id(+)=d.department_id
 
   63.Display all employees in sales or operation departments.:
@@ -360,7 +360,8 @@ Set Operators:
   TCL — Transaction Control Language (COMMIT, ROLLBACK, SAVEPOINT)
 
   2. What is an Index in SQL?:
-  An index is performance-tuning method of allowing faster retrieval of records from the table. An index creates an entry for each value, and it will be faster to retrieve data.
+  An index is performance-tuning method of allowing faster retrieval of records from the table.
+  An index creates an entry for each value, and it will be faster to retrieve data.
   Syntax
   CREATE INDEX index_name ON table_name;
   DROP INDEX index_name ON table_name;

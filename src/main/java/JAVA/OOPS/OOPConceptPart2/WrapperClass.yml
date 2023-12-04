@@ -1,0 +1,52 @@
+  In Java,
+    a wrapper class:
+      is a class that encapsulates, or wraps, the primitive data types in an object.
+    It allows you to convert primitive data types into objects,
+    which is useful in scenarios where objects are required, such as in collections (like ArrayList or HashMap)
+    or when using certain Java libraries that work with objects rather than primitives.
+
+  Here are the commonly used wrapper classes for primitive data types:
+
+  Byte:
+
+    Byte class encapsulates a byte.
+  Short:
+
+    Short class encapsulates a short.
+  Integer:
+
+    Integer class encapsulates an int.
+  Long:
+
+    Long class encapsulates a long.
+  Float:
+
+    Float class encapsulates a float.
+  Double:
+
+    Double class encapsulates a double.
+  Character:
+
+    Character class encapsulates a char.
+  Boolean:
+
+    Boolean class encapsulates a boolean.
+    These wrapper classes provide methods to convert between primitive types and objects,
+    as well as methods for common operations on these types.
+    They are part of the java.lang package and are automatically imported into every Java program.
+
+  For example, you can use Integer to convert an int to an object:
+
+    java
+    Copy code
+    int primitiveInt = 42;
+    Integer wrappedInt = Integer.valueOf(primitiveInt);
+
+  And you can convert it back to a primitive:
+
+    java
+    Copy code
+    int unwrappedInt = wrappedInt.intValue();
+
+    Wrapper classes are also useful when working with collections that store objects rather than primitives,
+    as they allow primitive types to be used in these contexts.

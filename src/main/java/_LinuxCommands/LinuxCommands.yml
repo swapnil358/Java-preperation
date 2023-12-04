@@ -5,49 +5,49 @@ Here are examples of these commonly used 40 Linux commands:
     ls: List files and directories in the current directory.
 
     cd: Change the current working directory.
-      cd /path/to/directory
+      cd /path/to/directory:
 
     pwd: Print the current working directory.
-      pwd
+      pwd:
 
     touch: Create an empty file.
-      touch example.txt
+      touch example.txt:
 
     mkdir: Create a new directory.
-      mkdir myfolder
+      mkdir myfolder:
 
     rmdir: Remove an empty directory.
-      rmdir myfolder
+      rmdir myfolder:
 
     rm: Remove files or directories.
-      rm file.txt
-      rm -r directory
+      rm file.txt:
+      rm -r directory:
 
     cp: Copy files and directories.
-      cp file.txt /path/to/destination/
+      cp file.txt /path/to/destination/:
 
     mv: Move or rename files and directories.
-      mv oldfile.txt newfile.txt
-      mv file.txt /path/to/destination/
+      mv oldfile.txt newfile.txt:
+      mv file.txt /path/to/destination/:
 
     cat: Display the contents of a file.
-      cat file.txt
+      cat file.txt:
 
     more/less: View the contents of a file one page at a time.
-      more file.txt
-      less file.txt
+      more file.txt:
+      less file.txt:
 
     head: Display the beginning of a file.
-      head file.txt
+      head file.txt:
 
     tail: Display the end of a file.
-      tail file.txt
+      tail file.txt:
 
     grep: Search for text patterns in files.
-      grep "pattern" file.txt
+      grep "pattern" file.txt:
 
     find: Search for files and directories.
-      find /path/to/search -name "filename"
+      find /path/to/search -name "filename":
 
     nano/vim/emacs: Text editors for creating and editing files.
       nano newfile.txt
@@ -68,17 +68,17 @@ Here are examples of these commonly used 40 Linux commands:
       df -h
 
     du: Estimate file and directory space usage.
-      du -sh /path/to/directory
+      du -sh /path/to/directory:
 
     tar: Archive and compress files.
-      tar -czvf archive.tar.gz file1 file2
+      tar -czvf archive.tar.gz file1 file2:
 
     gzip/gunzip: Compress and decompress files.
       gzip file.txt
       gunzip file.txt.gz
 
     unzip: Extract files from ZIP archives.
-      unzip archive.zip
+      unzip archive.zip:
 
     wget/curl: Download files from the internet.
       wget https://example.com/file.txt

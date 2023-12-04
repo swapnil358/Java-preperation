@@ -18,7 +18,6 @@ public interface Car extends Car2, Car3 {     //Main difference - Interface can 
 
 	public void refuel();
 
-
 	        
 	    
 	// We always define Abstract method without Abstract keyword

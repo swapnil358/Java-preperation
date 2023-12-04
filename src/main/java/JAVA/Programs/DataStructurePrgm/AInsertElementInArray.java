@@ -6,7 +6,7 @@ package JAVA.Programs.DataStructurePrgm;
 //Insert An Element Into An Array In Java (Data Structure)
 //https://youtu.be/DZM0GyL8Ars?list=PLlhM4lkb2sEiB1S_dHX8id1i_IN81t-q2
 
-public class InsertElementInArray {
+public class AInsertElementInArray {
 
     public static void main(String[] args) {
 

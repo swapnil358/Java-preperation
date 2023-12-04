@@ -1,0 +1,20 @@
+Static variables (class variables):
+  Belong to the class rather than to any particular instance of the class.
+  Shared among all instances of the class.
+  Declared using the static keyword.
+
+  Static methods:
+  Belong to the class rather than to any particular instance.
+  Can be called using the class name without creating an instance of the class.
+  Declared using the static keyword.
+
+
+  Instance variables (non-static variables):
+  Belong to instances (objects) of the class.
+  Each instance has its own copy of instance variables.
+  Do not use the static keyword.
+
+  Instance methods:
+  Operate on instance variables and can access them directly.
+  Require an instance of the class to be called.
+  Do not use the static keyword.

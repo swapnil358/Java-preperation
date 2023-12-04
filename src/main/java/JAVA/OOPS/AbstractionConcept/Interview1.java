@@ -2,7 +2,7 @@ package JAVA.OOPS.AbstractionConcept;
 
 
 //Asked - ConnectWise 
-//Can abstract class have constructor- if yes,
+//Can abstract class have constructor- if yes, Yes, it can have
 // how to call it as we cannot create object of abstract class
 
 public abstract class Interview1 {

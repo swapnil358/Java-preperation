@@ -12,9 +12,9 @@ public class FinallyConcept {
 	public static void main(String[] args) {
 
 		// test1();
-		// test2();
-		// devision();
-		devision2();
+		 test2();
+		// division();
+		//devision2();
 	}
 
 	// Example1

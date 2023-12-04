@@ -15,7 +15,7 @@ public class StringManipulation {
 		
 		System.out.println(s1.indexOf("s"));
 		
-		System.out.println(s1.indexOf('S', s1.indexOf("s")+1));
+		System.out.println("indexOf: "+ s1.indexOf('S', s1.indexOf("s")+1));
 		
 		System.out.println(s1.indexOf("Here"));
 		
@@ -26,7 +26,11 @@ public class StringManipulation {
 		
 		//substring
 		System.out.println("substring: "+s1.substring(9, 18));
-		
+
+		//substring
+		System.out.println("substring: "+s1.substring(s1.indexOf("H")));
+
+
 		//trim()
 		String s3 = "   Hello world    ";
 		

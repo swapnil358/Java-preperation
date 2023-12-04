@@ -43,7 +43,11 @@ public abstract class Bank extends BMW {         //Main Difference Abstract clas
 	// common in all child classes
 	// Hiding the Implementation logic --is called Abstraction.
 	// abstract class can have abstract method as well as Non abstract mehod
-	// Can not create the Object of Abstract class
+	// Can not create the Object of Abstract class  ---
+	//			because--> you cannot create an object of an abstract class in Java.
+	//			An abstract class is a class that cannot be instantiated directly
+	//			because it may contain abstract methods that have no implementation in the abstract class itself.
+	//			Abstract classes are meant to be subclassed, and objects should be created from the concrete subclasses.
 	// Can not create the Object of Interface class
 
 	/*

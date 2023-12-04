@@ -12,7 +12,7 @@ public class ArrayListConcept {
 		ArrayList ar = new ArrayList();
 		
 		ar.add(100); //0
-		ar.add(200); //1
+		ar.add("200"); //1
 		ar.add(300); //2
 		
 		System.out.println(ar.size());

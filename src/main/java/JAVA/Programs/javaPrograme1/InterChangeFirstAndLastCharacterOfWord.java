@@ -1,6 +1,9 @@
 package JAVA.Programs.javaPrograme1;
 
 /**
+ *      String input = "name king";
+ *           O/P String input = "eama gink";
+ *
  * The reverseInitialAndEndCharacters method splits the input string into words using the
  * regular expression \\s+ to handle multiple spaces.
  *
@@ -40,5 +43,4 @@ public class InterChangeFirstAndLastCharacterOfWord {
 
             return result.toString().trim(); // Trim to remove the trailing space
         }
-
 }

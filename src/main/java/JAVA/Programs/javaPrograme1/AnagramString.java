@@ -1,6 +1,6 @@
 package JAVA.Programs.javaPrograme1;
 
-public class StringAnagram2 {
+public class AnagramString {
 
 	public static void main(String[] args) {
 

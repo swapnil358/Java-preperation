@@ -1,4 +1,4 @@
-package JAVA.OOPS.Overriding;
+package JAVA.OOPS.OverridingConceptSolved;
 
 public class Child extends Parent {
 	

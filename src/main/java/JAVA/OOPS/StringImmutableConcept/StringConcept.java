@@ -6,7 +6,7 @@ public class StringConcept {
     // Security
     // Class loading mechanism
     // Optimization and Performance
-    // It can not be inheritesd
+    // It can not be inherited
     // Wrapper classes -- int, long, double, float will be final/immutable
 
     public static void main(String[] args) {

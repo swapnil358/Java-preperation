@@ -1,93 +1,102 @@
- package JAVA.OOPS.Encapsulation;
+package JAVA.OOPS.Encapsulation;
 
 public class EmployeeData { // The process of binding data and coding part is called as "Encapsulation"
 
-	// also called Data-hiding
+    // also called Data-hiding
 
-	// how to implement Encapsulation:
+    //Defination --
+//	==================
+    /**
+     * Encapsulation is the bundling of data and methods that
+     * operate on the data into a single unit, often a class, and restricting access to the internal details of the object.
+     */
 
-	// 1. private data variable: so that variable can not be accessed directly from
-	// outside the class
 
-	/*
-	 * Real-time Example Encapulation: School bag is one of the most real examples
-	 * of Encapsulation. School bag can keep our books, pens, etc
-	 * 
-	 * https://www.scientecheasy.com/2018/06/encapsulation-in-java-real-time-
-	 * examples-advantages.html
-	 */
+    // how to implement Encapsulation:
+    //=======================================
+    //
+    // 1. private data variable: so that variable can not be accessed directly from
+    // outside the class
 
-	/*
-	 * Q)What is the difference between Encapsulation and Abstraction? Ans: The
-	 * process of binding data and coding part is called as "Encapsulation". The
-	 * process showing neccessary data or implementation and hiding unneccessary
-	 * data or implementation is called as "Abstraction".
-	 * 
-	 */
+    /*
+     * Real-time Example Encapulation: School bag is one of the most real examples
+     * of Encapsulation. School bag can keep our books, pens, etc
+     *
+     * https://www.scientecheasy.com/2018/06/encapsulation-in-java-real-time-
+     * examples-advantages.html
+     */
 
-	/*
-	 * Encapsulation have lot of meaning over the internet. Most of them are
-	 * irrelevant.
-	 * 
-	 * What we could achieve with the getters and setters can be directly achieved
-	 * with the help of public variable..
-	 * 
-	 * Then why people use getters and setters. With a method, we can control the
-	 * data getting set and data that is returned, Which is not possible with public
-	 * variables.
-	 * 
-	 * For example, let us assume a method called getUserName where i can return a
-	 * default username of admin when the username is null. But that sort of
-	 * abstraction is not possible with variable.
-	 * 
-	 * You cannot have the control.
-	 * 
-	 * So to your question, encapsulation doesn't hide data but the implementation.
-	 * It provides an abstraction layer to cater business logic.
-	 * 
-	 */
-	private int ssn;
-	private String name;
-	private int empAge;
+    /*
+     * Q)What is the difference between Encapsulation and Abstraction? Ans: The
+     * process of binding data and coding part is called as "Encapsulation". The
+     * process showing neccessary data or implementation and hiding unneccessary
+     * data or implementation is called as "Abstraction".
+     *
+     */
 
-	public static void main(String[] args) {
-		EmployeeData emp = new EmployeeData();
-		emp.setName("TOM");
-		emp.setSsn(54566);
-		emp.setEmpAge(25);
+    /*
+     * Encapsulation have lot of meaning over the internet. Most of them are
+     * irrelevant.
+     *
+     * What we could achieve with the getters and setters can be directly achieved
+     * with the help of public variable..
+     *
+     * Then why people use getters and setters. With a method, we can control the
+     * data getting set and data that is returned, Which is not possible with public
+     * variables.
+     *
+     * For example, let us assume a method called getUserName where i can return a
+     * default username of admin when the username is null. But that sort of
+     * abstraction is not possible with variable.
+     *
+     * You cannot have the control.
+     *
+     * So to your question, encapsulation doesn't hide data but the implementation.
+     * It provides an abstraction layer to cater business logic.
+     *
+     */
+    private int ssn;
+    private String name;
+    private int empAge;
 
-		System.out.println("EMployee name is: " + emp.getName());
-		System.out.println("EMployee age is :+" + emp.getEmpAge());
-		System.out.println("EMployee age is :" + emp.getSsn());
-	}
+    public static void main(String[] args) {
+        EmployeeData emp = new EmployeeData();
+        emp.setName("TOM");
+        emp.setSsn(54566);
+        emp.setEmpAge(25);
 
-	// 1. private data variable: so that variable can not be accessed directly from
-	// outside the class
-	// 2. public getter and setter methods: to get and Set the values of the fields
+        System.out.println("EMployee name is: " + emp.getName());
+        System.out.println("EMployee age is :+" + emp.getEmpAge());
+        System.out.println("EMployee age is :" + emp.getSsn());
+    }
 
-	public int getSsn() {
-		
-		return ssn;
-	}
+    // 1. private data variable: so that variable can not be accessed directly from
+    // outside the class
+    // 2. public getter and setter methods: to get and Set the values of the fields
 
-	public void setSsn(int ssn) {
-		this.ssn = ssn;
-	}
+    public int getSsn() {
 
-	public String getName() {
-		return name;
-	}
+        return ssn;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setSsn(int ssn) {
+        this.ssn = ssn;
+    }
 
-	public int getEmpAge() {
-		return empAge;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setEmpAge(int empAge) {
-		this.empAge = empAge;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getEmpAge() {
+        return empAge;
+    }
+
+    public void setEmpAge(int empAge) {
+        this.empAge = empAge;
+    }
 
 }

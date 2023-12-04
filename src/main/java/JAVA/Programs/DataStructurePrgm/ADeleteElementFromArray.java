@@ -4,7 +4,7 @@ package JAVA.Programs.DataStructurePrgm;
 
 //https://youtu.be/pMe5cEc105w?list=PLlhM4lkb2sEiB1S_dHX8id1i_IN81t-q2
 
-public class DeleteElementFromArray {
+public class ADeleteElementFromArray {
 
 	public static void main(String[] args) {
 

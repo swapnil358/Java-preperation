@@ -11,6 +11,8 @@ public class Nice_interview_ques {
 		int[] a = { 1, 2, 3 };
 
 		int b[] = new int[a.length];
+
+
 		for (int i = 0; i < a.length; i++) {
 			if (i == a.length - 1) {
 				b[i] = a[i] * a[0];

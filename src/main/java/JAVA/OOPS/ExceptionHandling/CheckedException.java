@@ -3,16 +3,18 @@ package JAVA.OOPS.ExceptionHandling;
 public class CheckedException {
 
 	
-	//The exception which checked by compiler for smooth execution of program at runtime is called Checked exception
+	//The exception which checked by compiler for smooth execution of program at compile time is called Checked exception
+	// Compile-Time Exceptions-- because this detects at Compile-time
+
+
 	/*
 	 * Example: - FIlenotFoundException is Checked exception
 	 * IOException
 	 * SQLException
-	 * HallticketMissingexception
-	 * PenNotWorkingException
+	 * FileNotFoundException
 	 * 
 	 * 
-	 * In Case of Checked exception -  Compiler will check whether the programmer is handling exception if programmer not handing
+	 * In Case of Checked exception  -  Compiler will check whether the programmer is handling exception if programmer not handing
 	 * exception the we will get Compile time error
 	 */
 	public static void main(String[] args) {
@@ -24,11 +26,12 @@ public class CheckedException {
 		
 		
 		/*
-		 * Unchecked Exception - The Exception which are not checked by compiler are called unchecked exception
-		 * 
+		 * (Runtime Exceptions (Unchecked Exceptions):) - The Exception which are not checked by compiler are called unchecked exception
+		 * because this detects at Runtime-time
+		 *
 		 * Example:---
 		 * NullPointerException
-		 * ArrayOutofBoundException
+		 * ArrayOutOfBoundException
 		 * ArithmeticException
 		 * BombBlastException
 		 * NullPointerException

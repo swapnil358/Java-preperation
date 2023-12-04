@@ -1,4 +1,4 @@
-package JAVA.OOPS.POJO;
+package JAVA.OOPS.Encapsulation.POJO;
 
 /*
 {

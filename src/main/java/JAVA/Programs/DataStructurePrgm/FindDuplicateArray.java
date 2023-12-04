@@ -2,7 +2,7 @@ package JAVA.Programs.DataStructurePrgm;
 
 import java.util.HashSet;
 
-public class DuplicateArray {
+public class FindDuplicateArray {
 
 	// Find the duplicate value
 

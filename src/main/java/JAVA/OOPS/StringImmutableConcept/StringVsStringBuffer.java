@@ -13,7 +13,7 @@ public class StringVsStringBuffer {
 		
 		String s1 = new String("durga");
 
-		System.out.println(s);
+		System.out.println(s1);
 		
 		
 		//Expalain '==' operator and '.equal' method

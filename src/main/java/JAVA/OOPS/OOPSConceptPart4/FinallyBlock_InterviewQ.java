@@ -19,7 +19,7 @@ public class FinallyBlock_InterviewQ {
 
 		try {
 			int[] i = { 1, 2, 3 };
-			int x = i[5];// Change to 2 to see "return" result
+			int x = i[2];// Change to 2 to see "return" result
 			return;
 		
 		} catch (ArrayIndexOutOfBoundsException e) {

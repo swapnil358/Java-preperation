@@ -22,8 +22,8 @@ public class SingletonClassExample {
 	/*	
 	Basic steps to create Singleton class using Lazy Initialization
 
-	Step 1: Just declare private static variable of the same class (beware don�t instantiate)
-	Step 2: Provide private constructor to restrict instatiation from outside class
+	Step 1: Just declare private static variable of the same class (beware don't instantiate)
+	Step 2: Provide private constructor to restrict instantiation from outside class
 	Step 3: Provide public static getInstance() method  and check
 	Step 3.a: If INSTANCE variable is null, then only instantiate
 	Step 3.b: Otherwise, return already instantiated INSTANCE variable

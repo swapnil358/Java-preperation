@@ -16,7 +16,9 @@ public class HashTableConcept {
 
 		h1.put(10, "test");
 		h1.put(20, "Hello");
+		h1.put(21, "Hello");
 		h1.put(30, "world");
+	//	h1.put(null, "world"); // will get null pinter exception
 		
 		
 
@@ -27,6 +29,7 @@ public class HashTableConcept {
 		h1.put(1, 1.0);
 		h1.put(1, 2.5);
 
+		System.out.println(h1);
 		System.out.println(h1.size());
 
 		System.out.println(h1.get(20));

@@ -1,6 +1,6 @@
 package JAVA.Programs.javaPrograme1;
 
-public class PalinddromeString {
+public class PalindromeString {
 
     private static boolean isPalindrome(String str) {
         if (str == null)
