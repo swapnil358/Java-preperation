@@ -3,15 +3,15 @@ package JAVA.Programs.javaPrograme1;
 /**
  *      String input = "name king";
  *           O/P String input = "eama gink";
- *
+
  * The reverseInitialAndEndCharacters method splits the input string into words using the
  * regular expression \\s+ to handle multiple spaces.
- *
+
  * For each word, it checks if the word has more than one character. If it does,
  * it reverses the initial and end characters and appends the modified word to the result.
- *
+
  * If the word has only one character, it appends the word as is.
- *
+
  * The final result is then printed.
  */
 

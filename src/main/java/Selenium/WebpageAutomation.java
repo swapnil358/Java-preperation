@@ -37,8 +37,6 @@ public class WebpageAutomation {
             //This line checks if the number of options is 1, and if that option is "all". If true,
             // it means the user wants to select all checkboxes under the specified label.
 
-
-            // Assuming there is no checkbox with value 'all'
             // Select all checkboxes under the specified label
             List<WebElement> allCheckboxes = labelElement.findElements(By.xpath(".//input[@type='checkbox']"));
             for (WebElement checkbox : allCheckboxes) {
