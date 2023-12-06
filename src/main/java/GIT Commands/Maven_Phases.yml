@@ -1,0 +1,50 @@
+
+📌 mvn clean
+➡️ Purpose: Cleans the project by removing the target directory.
+➡️ Focus: Prepare the project for a fresh build.
+➡️ Scope: Ensure a clean and consistent build environment.
+
+📌 mvn compile
+➡️ Purpose: Compiles the source code of the project.
+➡️ Focus: Check syntax and generate bytecode.
+➡️ Scope: Initial step before testing or packaging.
+
+📌 mvn test
+➡️ Purpose: Runs unit tests using a testing framework like JUnit.
+➡️ Focus: Validate code functionality.
+➡️ Scope: Ensure code reliability and correctness.
+
+📌 mvn package
+➡️ Purpose: Packages the compiled code into a distributable format.
+➡️ Focus: Create a JAR, WAR, or other artifacts.
+➡️ Scope: Prepare the application for deployment.
+
+📌 mvn install
+➡️ Purpose: Install the packaged project into the local repository.
+➡️ Focus: Make the project available for other projects locally.
+➡️ Scope: Share artifacts across different modules or projects.
+
+📌 mvn deploy
+➡️ Purpose: Copies the final package to a remote repository for sharing.
+➡️ Focus: Distribute the project to a central repository.
+➡️ Scope: Facilitate sharing of artifacts across teams or organizations.
+
+📌 mvn clean install
+➡️ Purpose: Combines the clean and install phases.
+➡️ Focus: Ensure a clean build and install the project.
+➡️ Scope: Commonly used for a full project rebuild.
+
+📌 mvn dependency:tree
+➡️ Purpose: Displays the project's dependency tree.
+➡️ Focus: Visualize dependencies and their versions.
+➡️ Scope: Aid in troubleshooting dependency issues.
+
+📌 mvn site
+➡️ Purpose: Generate a site for the project.
+➡️ Focus: Create project documentation and reports.
+➡️ Scope: Provide detailed information about the project.
+
+📌 mvn version:
+➡️ Purpose: Displays the Maven version information.
+➡️ Focus: Check the installed Maven version.
+➡️ Scope: Ensure compatibility and stay up-to-date.
