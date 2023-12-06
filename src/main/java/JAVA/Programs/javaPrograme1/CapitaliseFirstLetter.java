@@ -20,7 +20,8 @@ public class CapitaliseFirstLetter {
 			for (String word : words) {
 				if (word.length() > 0) {
 					char firstChar = Character.toUpperCase(word.charAt(0));
-					result.append(firstChar).append(word.substring(1)).append(" ");
+					String remainingChars = word.substring(1);
+					result.append(firstChar).append(remainingChars).append(" ");
 				}
 			}
 
