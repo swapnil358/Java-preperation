@@ -7,13 +7,13 @@ public class ArrayListVSLinkedList {
      *=========================
      * ArrayList: Uses a dynamic array to store elements. It provides random access to elements based on index.
      * LinkedList: Uses a doubly-linked list to store elements. It provides sequential access to elements.
-     *
+
      * Insertion and Deletion:
      +=========================
      * ArrayList: Insertion and deletion operations can be slower, especially when elements need to be added or removed from the middle of the list, as it may require shifting elements.
      * LinkedList: Insertion and deletion operations are generally faster, especially when manipulating elements in the middle of the list, as it involves updating pointers.
-     *
-     *
+
+
      * Access Time:
      *===============
      * ArrayList: Provides fast random access to elements using index. Retrieving an element at a specific index is efficient.

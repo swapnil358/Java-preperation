@@ -20,9 +20,9 @@ public class StringManipulation {
 		System.out.println(s1.indexOf("Here"));
 		
 		//String comparision
-		System.out.println(s1.equals(s2));
+		System.out.println("equals: "+s1.equals(s2));
 	
-		System.out.println(s1.equalsIgnoreCase(s2));
+		System.out.println("equalsIgnoreCase: "+s1.equalsIgnoreCase(s2));
 		
 		//substring
 		System.out.println("substring: "+s1.substring(9, 18));

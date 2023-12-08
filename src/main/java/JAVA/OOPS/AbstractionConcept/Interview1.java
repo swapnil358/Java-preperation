@@ -19,7 +19,7 @@ public abstract class Interview1 {
 	
 }
 
-class child{
+class child extends  Interview1{
 	
 	public child(){
 	super();
@@ -31,6 +31,7 @@ class child{
 class test{
 	public static void main(String[] args) {
 		child c = new child();
+
 	}
 }
 

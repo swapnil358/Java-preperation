@@ -23,15 +23,15 @@ public class ReverseEachWordInSentence {
 		
 		String[] word = name.split(" ");
 		
-		String reverseString="";
+		StringBuilder reverseString= new StringBuilder();
 		for(String w : word) {
 			
-			String reverse="";
+			StringBuilder reverse= new StringBuilder();
 			for(int i=w.length()-1; i>=0; i--) {
-				reverse = reverse + w.charAt(i);
+				reverse.append(w.charAt(i));
 			}
 			
-			reverseString = reverseString + reverse+" ";
+			reverseString.append(reverse).append(" ");
 		}
 		System.out.println("reverse3 "+reverseString);
 	}

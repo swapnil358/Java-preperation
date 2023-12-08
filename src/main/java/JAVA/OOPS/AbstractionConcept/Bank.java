@@ -42,7 +42,7 @@ public abstract class Bank extends BMW {         //Main Difference Abstract clas
 	// Partial abstraction. - Loan() is abstract in nature, but credit and debit is
 	// common in all child classes
 	// Hiding the Implementation logic --is called Abstraction.
-	// abstract class can have abstract method as well as Non abstract mehod
+	// abstract class can have abstract method as well as Non-abstract method
 	// Can not create the Object of Abstract class  ---
 	//			because--> you cannot create an object of an abstract class in Java.
 	//			An abstract class is a class that cannot be instantiated directly

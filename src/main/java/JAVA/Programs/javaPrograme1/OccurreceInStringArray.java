@@ -6,7 +6,7 @@ import java.util.*;
  * How to print occurence of String array
  */
 
-public class OccurrenceInStringArray {
+public class OccurreceInStringArray {
 
 	public static void main(String[] args) {
 	//	method1();

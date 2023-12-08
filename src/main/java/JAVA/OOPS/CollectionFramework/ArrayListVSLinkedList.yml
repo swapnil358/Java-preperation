@@ -1,0 +1,40 @@
+  /**
+    * Underlying Data Structure:
+    /*=========================
+    * ArrayList: Uses a dynamic array to store elements. It provides random access to elements based on index.
+    * LinkedList: Uses a doubly-linked list to store elements. It provides sequential access to elements.
+
+    * Insertion and Deletion:
+    /*=========================
+    * ArrayList: Insertion and deletion operations can be slower, 
+                 especially when elements need to be added or removed from the middle of the list, 
+                 as it may require shifting elements.
+    * LinkedList: Insertion and deletion operations are generally faster, 
+                 especially when manipulating elements in the middle of the list, as it involves updating pointers.
+
+
+    * Access Time:
+    /*===============
+    * ArrayList: Provides fast random access to elements using index. Retrieving an element at a specific index is efficient.
+    * LinkedList: Sequential access is faster. Random access involves traversing the list from the beginning or end, 
+                  which can be slower compared to an ArrayList.
+    *
+    *
+    * Memory Overhead:
+    /*===================
+    * ArrayList: Has less memory overhead per element since it only needs to store the elements and an array to hold them.
+    * LinkedList: Requires additional memory for storing pointers (references) to the next and previous elements, 
+                  resulting in higher memory overhead per element.
+    *
+    *
+    * Iterating through Elements:
+    /*==============================
+    * ArrayList: Iterating through elements using an enhanced for loop or an iterator is generally faster.
+    * LinkedList: Iterating through elements involves following pointers sequentially, which can be slower compared to an ArrayList.
+
+
+    * In summary, if you frequently need fast random access to elements and the list size doesn't often change, 
+    ArrayList might be more suitable. If you frequently insert or remove elements, especially in the middle of the list, 
+    and sequential access is more common, LinkedList might be a better choice. 
+    The best choice depends on the specific requirements and usage patterns of your application.
+    *
