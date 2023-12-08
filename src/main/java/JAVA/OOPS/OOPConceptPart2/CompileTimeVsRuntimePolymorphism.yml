@@ -1,9 +1,10 @@
-Method Overloading (Compile-Time Polymorphism):
-  Definition: Method overloading allows a class to have multiple methods with the same name but
-  different parameter lists (different number or types of parameters).
 
-  Compile-Time Polymorphism: The decision of which method to call is made by the compiler at
-  compile time based on the method signature.
+
+Method Overloading (Compile-Time Polymorphism):
+
+  Definition: Method overloading allows a class to have multiple methods with the same name but different parameter lists (different number or types of parameters).
+
+  Compile-Time Polymorphism: The decision of which method to call is made by the compiler at compile time based on the method signature.
 
 
 

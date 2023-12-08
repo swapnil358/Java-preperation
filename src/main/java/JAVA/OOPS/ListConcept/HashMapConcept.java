@@ -10,7 +10,7 @@ public class HashMapConcept {
 
 		
 		//HashMap is class which implements Map interface
-		//extends AstractMap
+		//extends AbstractMap
 		//It contains unique elements
 		//It stores the value in the form of Key,Value pair
 		//it may have one null key and mutiple null value

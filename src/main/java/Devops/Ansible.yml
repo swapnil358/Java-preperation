@@ -3,7 +3,8 @@ Certainly! Here are the numbered questions along with their answers:
 ### Ansible:
 
   1. **What is Ansible, and how does it differ from other configuration management tools?**
-  - **Answer:** Ansible is an open-source automation tool for configuration management, application deployment, and task automation. It uses YAML for configuration and does not require agents on managed nodes.
+  - **Answer:** Ansible is an open-source automation tool for configuration management, application deployment, and task automation. 
+  It uses YAML for configuration and does not require agents on managed nodes.
 
   2. **Explain Ansible Playbooks.**
   - **Answer:** Playbooks are YAML files that define a series of tasks to be executed on remote servers. They describe the desired state of the system.

@@ -1,5 +1,6 @@
 docker pull: This command is used to download a Docker image from a registry.
-  For example, docker pull nginx will fetch the official Nginx image from Docker Hub.
+  For example, 
+  docker pull nginx will fetch the official Nginx image from Docker Hub.
 
 docker run: To start a new container from an image, you can use docker run.
   For instance, docker run -d -p 8080:80 nginx will start an Nginx web server container in the background, mapping port 8080 on your host to port 80 in the container.

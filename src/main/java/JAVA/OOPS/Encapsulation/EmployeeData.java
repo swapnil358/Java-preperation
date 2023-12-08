@@ -19,7 +19,7 @@ public class EmployeeData { // The process of binding data and coding part is ca
     // outside the class
 
     /*
-     * Real-time Example Encapulation: School bag is one of the most real examples
+     * Real-time Example Encapsulation: School bag is one of the most real examples
      * of Encapsulation. School bag can keep our books, pens, etc
      *
      * https://www.scientecheasy.com/2018/06/encapsulation-in-java-real-time-
@@ -29,17 +29,17 @@ public class EmployeeData { // The process of binding data and coding part is ca
     /*
      * Q)What is the difference between Encapsulation and Abstraction? Ans: The
      * process of binding data and coding part is called as "Encapsulation". The
-     * process showing neccessary data or implementation and hiding unneccessary
+     * process showing necessary data or implementation and hiding unnecessary
      * data or implementation is called as "Abstraction".
      *
      */
 
     /*
-     * Encapsulation have lot of meaning over the internet. Most of them are
+     * Encapsulation have a lot of meaning over the internet. Most of them are
      * irrelevant.
      *
      * What we could achieve with the getters and setters can be directly achieved
-     * with the help of public variable..
+     * with the help of public variable.
      *
      * Then why people use getters and setters. With a method, we can control the
      * data getting set and data that is returned, Which is not possible with public

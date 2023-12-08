@@ -1,4 +1,22 @@
-  In Java,
+Boxing:
+    Boxing is the process of converting a primitive data type into its corresponding wrapper class.
+    For example, converting an int to an Integer, or a double to a Double.
+    
+    Example of boxing:
+    int primitiveInt = 42;
+    Integer boxedInt = primitiveInt; // Autoboxing
+    
+    
+Unboxing:
+      Unboxing is the process of converting an object of a wrapper class back to its corresponding primitive type.
+      For example, converting an Integer back to an int, or a Double back to a double.
+
+    Example of unboxing:
+    Integer boxedInt = 42;
+    int primitiveInt = boxedInt; // Auto-unboxing
+    
+    
+    In Java,
     a wrapper class:
       is a class that encapsulates, or wraps, the primitive data types in an object.
     It allows you to convert primitive data types into objects,
