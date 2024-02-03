@@ -1,0 +1,104 @@
+https://solvejava.rf.gd/
+
+
+Java Code: Problems with Solutions
+Problem 1: Program to print Hello World
+Problem 2: Program to generate a 4-digit random number
+Problem 3: Program to count the occurrences of a specific character in a sentence
+Problem 4: Program to reverse a string
+Problem 5: Program to generate a 4-digit random number without using the random method
+Problem 6: Program to find a number in an array and an arrayList
+Problem 7: Program to find the numbers in an array where the adjacent right numbers are smaller
+Problem 8: Program to find the count of each character in a given string
+Problem 9: Program to extract the last 4 characters of a string
+Problem 10: Program to remove duplicates from a given array
+Problem 11: Program to find the first letter of each word in a given string
+Problem 12: Program to generate a Fibonacci series using arrays
+Problem 13: Program to create a new array by removing the first and last elements of an existing array
+Problem 14: Program to find the minimum and maximum elements in an array using the sort method
+Problem 15: Program to generate a Fibonacci series using a HashMap
+Problem 16: Program to implement various sorting approaches on an array
+Problem 17: Program to find non-repetitive characters in a string
+Problem 18: Program to find non-repetitive characters in a string using HashMap
+Problem 19: Given an array of integers, identify the indices of two numbers that add up to a specific target. Assume each input has exactly one solution, and each element can only be used once
+Problem 20: Write a program that converts the first and last letter of each word in a string to uppercase
+Problem 21: Check if the given input is a palindrome
+Problem 22: Program to expand a string with character counts
+Problem 23: Program to expand a string with character counts
+Problem 24: Program to find the longest contiguous alphanumeric substring
+Problem 25: Program to find the largest substring without repeated characters
+Problem 26: Program to find the longest palindromic substring
+Problem 27: Program to convert the given string into a Zigzag pattern
+Problem 28: Program to reverse a string
+Problem 29: Program to extract integers from a given input
+Problem 30: Program to find the longest common prefix in an array of strings
+Problem 31: Program to find the longest common prefix in an array of strings
+Problem 32: Program to search for the insert position of a target element in a sorted array
+Problem 33: Program to find the minimum and maximum values in an array
+Problem 34: Program to find the first missing positive integer in an array
+Problem 35: Program to find the minimum index sum of two lists
+Problem 36: Program to find the maximum number of string pairs
+Problem 37: Program to find the maximum value string in an array
+Problem 38: Program to find the maximum subarray sum
+Problem 39: Program to find the closest number to zero
+Problem 40: Program to convert Roman numeral to integer
+Problem 41: Program to find the first letter that appears twice
+Problem 42: Program to count the characters in a string
+Problem 43: Program to find the index of the first occurrence in a string
+Problem 44: Given a non-empty array of integers nums, every element appears twice except for one. Find that single one. You must implement a solution with a linear runtime complexity and use only constant extra space
+Problem 45: Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k
+Problem 46: Program to find the single distinct number
+Problem 47: Given an array nums of size n, return the majority element. The majority element is the element that appears more than (n / 2) times. You may assume that the majority element always exists in the array
+Problem 48: Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array
+Problem 49: Program to find the missing numbers
+Problem 50: Given a string of lowercase characters from ‘a’ – ‘z’. Write a program to print the characters of this string in sorted order
+Problem 51: Given a string of characters. Write a program to print the characters of this string in sorted order
+Problem 52: Program to sort words of a sentence
+Problem 53: Program to minimize the string
+Problem 54: You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's. Increment the large integer by one and return the resulting array of digits.
+Problem 55: Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+Problem 56: Given a pattern and a string s, find if s follows the same pattern. Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+Problem 57: You are given a 0-indexed integer array nums. The distinct count of a subarray of nums is defined as: Let nums[i..j] be a subarray of nums consisting of all the indices from i to j such that 0 <= i <=j < nums.length. Then the number of distinct values in nums[i..j] is called the distinct count of nums[i..j]. Return the sum of the squares of distinct counts of all subarrays of nums. A subarray is a contiguous non-empty sequence of elements within an array.
+Problem 58: Program to Generate Zigzag Words.
+Problem 59: You are given a 0-indexed m x n integer matrix mat and an integer k. You have to cyclically right shift odd indexed rows k times and cyclically left shift even indexed rows k times. Return true if the initial and final matrix are exactly the same and false otherwise.
+Problem 60: Given a 0-indexed integer array nums of length n and an integer target, return the number of pairs (i, j) where 0 <= i < j < n and nums[i] + nums[j] < target.
+Problem 61: You are given a 0-indexed integer array nums and a target element target. A target index is an index i such that nums[i] == target. Return a list of the target indices of nums after sorting nums in non-decreasing order. If there are no target indices, return an empty list. The returned list must be sorted in increasing order.
+Problem 62: You are given a binary string s that contains at least one '1'. You have to rearrange the bits in such a way that the resulting binary number is the maximum odd binary number that can be created from this combination. Return a string representing the maximum odd binary number that can be created from the given combination.
+Problem 63: Program to sort a string of numerical characters.
+Problem 64: Program to generate a string after moving zeros to the front.
+Problem 65: Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements. Note that you must do this in-place without making a copy of the array.
+Problem 66: You are given a 0-indexed array of strings words and a character x. Return an array of indices representing the words that contain the character x.
+Problem 67: Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+Problem 68: You are given three strings s1, s2, and s3. You have to perform the following operation on these three strings as many times as you want. In one operation you can choose one of these three strings such that its length is at least 2 and delete the rightmost character of it. Return the minimum number of operations you need to perform to make the three strings equal if there is a way to make them equal, otherwise, return -1.
+Problem 69: You are given two 0-indexed integer arrays nums1 and nums2 of sizes n and m, respectively. Consider calculating the following values: The number of indices i such that 0 <= i < n and nums1[i] occurs at least once in nums2. The number of indices i such that 0 <=i < m and nums2[i] occurs at least once in nums1. Return an integer array answer of size 2 containing the two values in the above order.
+Problem 70: You are given a 0-indexed array mountain. Your task is to find all the peaks in the mountain array. Return an array that consists of indices of peaks in the given array in any order.
+Problem 71: Given a positive integer num represented as a string, return the integer num without trailing zeros as a string.
+Problem 72: Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
+Problem 73: Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
+Problem 74: Given an integer array nums, return the third distinct maximum number in this array. If the third maximum does not exist, return the maximum number.
+Problem 75: Given two integer arrays nums1 and nums2, sorted in non-decreasing order, return the minimum integer common to both arrays. If there is no common integer amongst nums1 and nums2, return -1. Note that an integer is said to be common to nums1 and nums2 if both arrays have at least one occurrence of that integer.
+Problem 76: Given two integer arrays nums1 and nums2, sorted in non-decreasing order, return the minimum integer common to both arrays. If there is no common integer amongst nums1 and nums2, return -1. Note that an integer is said to be common to nums1 and nums2 if both arrays have at least one occurrence of that integer.
+Problem 77: Given a string s consisting of words and spaces, return the length of the last word in the string. A word is a maximal substring consisting of non-space characters only.
+Problem 78: Write an algorithm to determine if a number n is happy. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy. Return true if n is a happy number, and false if not.
+Problem 79: Given a m x n binary matrix mat, find the 0-indexed position of the row that contains the maximum count of ones, and the number of ones in that row. In case there are multiple rows that have the maximum count of ones, the row with the smallest row number should be selected. Return an array containing the index of the row, and the number of ones in it.
+Problem 80: Write an algorithm to determine if a number n is happy. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy. Return true if n is a happy number, and false if not.
+Problem 81: Given two strings s and t, determine if they are isomorphic. Two strings s and t are isomorphic if the characters in s can be replaced to get t. All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself. s and t consist of any valid ascii character.
+Problem 82: Given two strings s and t, determine if they are isomorphic. Two strings s and t are isomorphic if the characters in s can be replaced to get t. All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself. s and t consist of any valid ascii character.
+Problem 83: You are given an array nums of non-negative integers. nums is considered special if there exists a number x such that there are exactly x numbers in nums that are greater than or equal to x. Notice that x does not have to be an element in nums. Return x if the array is special, otherwise, return -1. It can be proven that if nums is special, the value for x is unique.
+Problem 84: You are given an array nums of non-negative integers. nums is considered special if there exists a number x such that there are exactly x numbers in nums that are greater than or equal to x. Notice that x does not have to be an element in nums. Return x if the array is special, otherwise, return -1. It can be proven that if nums is special, the value for x is unique.
+Problem 85: Given an array of string words, return all strings in words that is a substring of another word. You can return the answer in any order. A substring is a contiguous sequence of characters within a string.
+Problem 86: Given an array of string words, return all strings in words that is a substring of another word. You can return the answer in any order. A substring is a contiguous sequence of characters within a string.
+Problem 87: You are given two strings s and t. String t is generated by random shuffling string s and then add one more letter at a random position. t.length == s.length + 1. Return the letter that was added to t.
+Problem 88: You are given two strings s and t. String t is generated by random shuffling string s and then add more letter at a random position. t.length > s.length. Return the letters that was added to t.
+Problem 89: You are given a 0-indexed integer array nums of even length and there is also an empty array arr. Alice and Bob decided to play a game where in every round Alice and Bob will do one move. The rules of the game are as follows: Every round, first Alice will remove the minimum element from nums, and then Bob does the same. Now, first Bob will append the removed element in the array arr, and then Alice does the same. The game continues until nums becomes empty. Return the resulting array arr.
+Problem 90: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+Problem 91: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+Problem 92: Given a string s, reverse only all the vowels in the string and return it. The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
+Problem 93: Given a string s, reverse only all the vowels in the string and return it. The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
+Problem 94: Given a binary array nums, return the maximum number of consecutive 1's in the array.
+Problem 95: The next greater element of some element x in an array is the first greater element that is to the right of x in the same array. You are given two distinct 0-indexed integer arrays nums1 and nums2, where nums1 is a subset of nums2. For each 0 <= i < nums1.length, find the index j such that nums1[i]==nums2[j] and determine the next greater element of nums2[j] in nums2. If there is no next greater element, then the answer for this query is -1. Return an array ans of length nums1.length such that ans[i] is the next greater element as described above. All integers in nums1 and nums2 are unique. All the integers of nums1 also appear in nums2.
+Problem 96: Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]. Return the answer in an array. 2 <=nums.length <=500 0 <=nums[i] <=100
+Problem 97: Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]. Return the answer in an array. 2 <=nums.length <=500 0 <=nums[i] <=100
+Problem 98: A permutation perm of n + 1 integers of all the integers in the range [0, n] can be represented as a string s of length n where: s[i] == 'I' if perm[i] < perm[i + 1], and s[i]=='D' if perm[i]> perm[i + 1]. Given a string s, reconstruct the permutation perm and return it. If there are multiple valid permutations perm, return any of them. s[i] is either 'I' or 'D'.
+Problem 99: You are given a string s of lowercase English letters and an array widths denoting how many pixels wide each lowercase English letter is. Specifically, widths[0] is the width of 'a', widths[1] is the width of 'b', and so on. You are trying to write s across several lines, where each line is no longer than 100 pixels. Starting at the beginning of s, write as many letters on the first line such that the total width does not exceed 100 pixels. Then, from where you stopped in s, continue writing as many letters as you can on the second line. Continue this process until you have written all of s. Return an array result of length 2 where: result[0] is the total number of lines. result[1] is the width of the last line in pixels.
+Problem 100: Given two strings s and t, return true if t is an anagram of s, and false otherwise. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. s and t consist of lowercase English letters.
