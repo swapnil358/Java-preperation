@@ -20,4 +20,25 @@
             <version>4.10.0</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+
+                <configuration>
+                    <executable>node</executable>
+                    <arguments>
+                        <argument>${project.basedir}/${js.file}</argument>
+                    </arguments>
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+    </build>
+
 </project>
