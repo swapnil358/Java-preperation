@@ -10,40 +10,24 @@ public class CheckSortedArray {
 	 * method 1--- using for loop method 2--- using arrays.sort()
 	 */
 
-	public static boolean Sorted() {
-
-		int arr[] = { 1, 2, 3, 4, 5 };
-
-		// Using For loop
-
-		for (int i = 0; i < arr.length - 1; i++) {
-			if (arr[i] < arr[i + 1]) {
-				return true;
-			}
-		}
-
-		return false;
-
-	}
-
 	public static void main(String[] args) {
 
-		System.out.println("Sorted() :"+Sorted());
+			int arr[] = {1, 2, 3, 4, 5};
 
-		// Using inbuilt function
+			boolean sorted = true;
 
-		int arr1[] = { 5, 8, 9, 4 };
+			for (int i = 0; i < arr.length - 1; i++) {
 
-		Arrays.sort(arr1); // Here array got sorted as 4,5,8,9
+				if (arr[i] > arr[i + 1]) {
+					sorted = false;
+					break;
+				}
+			}
 
-		for (int i = 0; i <= arr1.length - 1; i++) {
-			// Using For loop to diplay array
-
-			System.out.println("for loop Array  " + arr1[i]);
-			
+			if (sorted) {
+				System.out.println("Array is sorted");
+			} else {
+				System.out.println("Array is not sorted");
+			}
 		}
-		
-		
-
-	}
 }
