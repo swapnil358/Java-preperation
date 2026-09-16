@@ -66,7 +66,7 @@ public class MissingNumber {
 
 		int n = arr.length + 1; // Total numbers should be 6
 
-		// Calculate expected sum of numbers from 1 to n
+		// Calculate expected sum of numbers from 1 to n, below formula
 		int expectedSum = n * (n + 1) / 2;
 
 		int actualSum = 0; // Variable to store sum of array elements
