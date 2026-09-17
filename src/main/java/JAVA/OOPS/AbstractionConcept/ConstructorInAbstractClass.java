@@ -10,6 +10,7 @@ public abstract class ConstructorInAbstractClass {
 
     // Constructor in the abstract class
     public ConstructorInAbstractClass(String name) {
+
         this.name = name;
     }
 
@@ -18,8 +19,13 @@ public abstract class ConstructorInAbstractClass {
 
     // Concrete method in the abstract class
     public String getName() {
+
         return name;
     }
+
+
+    //-------------------------------------------------------------------------------------------------------------------------------------------------//
+
 
     static class Dog extends ConstructorInAbstractClass {
         private String breed;
@@ -33,11 +39,13 @@ public abstract class ConstructorInAbstractClass {
         // Implementation of the abstract method
         @Override
         void makeSound() {
+
             System.out.println("Woof!");
         }
 
         // Additional method in the concrete subclass
         public String getBreed() {
+
             return breed;
         }
     }
