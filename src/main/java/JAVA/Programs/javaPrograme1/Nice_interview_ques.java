@@ -43,9 +43,9 @@ public class Nice_interview_ques {
 		int[] a = {1, 2, 3}; // Input array
 
 		// Number of pairs = n * (n - 1) / 2
-		int size = a.length * (a.length - 1) / 2;
+		//int size = a.length * (a.length - 1) / 2;
 
-		int[] b = new int[size]; // Output array
+		int[] b = new int[a.length]; // Output array
 
 		int k = 0; // Index for output array
 
