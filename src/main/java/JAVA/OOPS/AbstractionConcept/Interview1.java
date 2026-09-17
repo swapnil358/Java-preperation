@@ -7,11 +7,13 @@ package JAVA.OOPS.AbstractionConcept;
 
 public abstract class Interview1 {
 	public Interview1() {
+
 		this(10);
 		System.out.println("Default Constructor");
 	}
 	
 	private Interview1(int a) {
+
 		System.out.println("Parametrised constructor");
 	}
 
@@ -22,6 +24,7 @@ public abstract class Interview1 {
 class child extends  Interview1{
 	
 	public child(){
+
 	super();
 	}
 	
