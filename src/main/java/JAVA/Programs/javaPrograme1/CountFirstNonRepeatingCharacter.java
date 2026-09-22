@@ -3,7 +3,7 @@ package JAVA.Programs.javaPrograme1;
 import java.util.HashMap;
 import java.util.Map;
 
-
+//Q1. Last non-repeating character in a string
 //String inputString = "geeksforgeeks";
 // output = f
 public class CountFirstNonRepeatingCharacter {
@@ -29,7 +29,7 @@ public class CountFirstNonRepeatingCharacter {
                 charCount.put(c, 1);
             }
         }
-        System.out.println(charCount);
+        System.out.println("charCount: " + charCount);
 
         // Iterate through the string to find the first non-repeating character
         for (char c : input.toCharArray()) {

@@ -1,6 +1,6 @@
 package JAVA.Programs.javaPrograme1;
 
-public class JavaChaining {
+public class JavaConstructorChaining {
 
 	/*
 	 * Java Constructor chaining is the process of calling one constructor from
@@ -15,25 +15,25 @@ public class JavaChaining {
 	 */
 
 	// No argument constructor
-	public JavaChaining() {
+	public JavaConstructorChaining() {
 		System.out.println("Default Constructor");
 	}
 
 	// one argument constructor
-	public JavaChaining(int x) {
+	public JavaConstructorChaining(int x) {
 		this();
 		System.out.println(x + " This is constructor 1");
 	}
 
 	// two argument constructor
-	public JavaChaining(int x, int y) {
+	public JavaConstructorChaining(int x, int y) {
 		this(50);
 		System.out.println(x + y + " This is constructor 2");
 	}
 
 	public static void main(String[] args) {
 
-		JavaChaining J = new JavaChaining(10, 20);
+		JavaConstructorChaining J = new JavaConstructorChaining(10, 20);
 
 	}
 

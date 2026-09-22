@@ -24,7 +24,7 @@ public class InterChangeFirstAndLastCharacterOfWord {
 
         private static String reverseInitialAndEndCharacters(String input) {
             StringBuilder result = new StringBuilder();
-            String[] words = input.split("\\s+"); // Split the string into words
+            String[] words = input.split(" "); // Split the string into words
 
             for (String word : words) {
                 if (word.length() > 1) {
