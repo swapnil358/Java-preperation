@@ -1,5 +1,10 @@
 package JAVA.Programs.javaPrograme1;
 
+/*
+* length → property/field used mainly with arrays
+length() → method used with String
+*
+* */
 public class PalindromeString {
 
     private static boolean isPalindrome(String str) {

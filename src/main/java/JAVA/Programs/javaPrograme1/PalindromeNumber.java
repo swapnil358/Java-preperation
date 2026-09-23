@@ -29,12 +29,9 @@ public class PalindromeNumber {
 	}
 
 	public static void main(String[] args) {
-		
 		palindrome(151);
 		palindrome(152);
 		palindrome(789987);
-
-		
 	}
 
 }
