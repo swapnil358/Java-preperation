@@ -136,7 +136,7 @@ public class StreamAPIPrograms {
 
         List<String> result = titles.stream()
                 .filter(s -> s.length() > 4)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("1. Filter by length : " + result);
     }
@@ -162,7 +162,7 @@ public class StreamAPIPrograms {
 
         List<String> result = names.stream()
                 .map(s -> s.toUpperCase())
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("2. Uppercase : " + result);
     }
@@ -192,7 +192,7 @@ public class StreamAPIPrograms {
         List<String> result = titles.stream()
                 .filter(s -> s.length() > 4)
                 .map(s -> s.toUpperCase())
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("3. Filter + Map : " + result);
     }
@@ -218,7 +218,7 @@ public class StreamAPIPrograms {
 
         List<Integer> result = numbers.stream()
                 .filter(n -> n % 2 == 0)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("4. Even numbers : " + result);
     }
@@ -244,7 +244,7 @@ public class StreamAPIPrograms {
 
         List<Integer> result = numbers.stream()
                 .filter(n -> n > 50)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("5. Greater than 50 : " + result);
     }
@@ -270,7 +270,7 @@ public class StreamAPIPrograms {
 
         List<Integer> result = numbers.stream()
                 .map(n -> n * n)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("6. Square : " + result);
     }
@@ -376,7 +376,7 @@ public class StreamAPIPrograms {
 
         List<Integer> result = numbers.stream()
                 .sorted()
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("10. Sorted numbers : " + result);
     }
@@ -402,7 +402,7 @@ public class StreamAPIPrograms {
 
         List<String> result = names.stream()
                 .sorted()
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("11. Sorted strings : " + result);
     }
@@ -429,7 +429,7 @@ public class StreamAPIPrograms {
 
         List<Integer> result = numbers.stream()
                 .distinct()
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("12. Distinct : " + result);
     }
@@ -645,6 +645,58 @@ public class StreamAPIPrograms {
      * 3. Skip the highest number.
      * 4. Get the next number.
      * ============================================================
+     * Explanation=>
+     * ===========
+     *
+
+             .sorted((a, b) -> b - a)
+
+        This sorts the numbers in descending order.
+
+        Normally:
+
+        .sorted()
+
+        gives ascending order:
+
+        10
+        30
+        50
+        60
+        80
+
+        But:
+
+        .sorted((a, b) -> b - a)
+
+        gives descending order:
+
+        80
+        60
+        50
+        30
+        10
+
+        Think:
+
+        a = 10
+        b = 80
+
+        b - a
+        80 - 10 = positive
+
+        The comparator therefore puts the larger value first.
+
+        =Better interview version
+
+        Instead of:
+
+        .sorted((a, b) -> b - a)
+
+        I'd recommend:
+
+        .sorted(Comparator.reverseOrder())
+     *
      */
     public static void findSecondHighestNumber() {
 
