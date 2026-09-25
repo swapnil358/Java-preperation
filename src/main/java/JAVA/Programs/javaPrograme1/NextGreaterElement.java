@@ -2,6 +2,16 @@ package JAVA.Programs.javaPrograme1;
 
     /*
 
+        1. Create array.
+        2. Take each element one by one.
+        3. Check elements on its right.
+        4. Find the first greater element.
+        5. Store it and stop searching.
+        6. If not found, keep `-1`.
+        7. Print the result.
+
+
+
     Next Greater Element — Java Interview Question
 
     Question: Given an array, find the next greater element for every element. The next greater element is the first element on the right that is greater than the current element. If no greater element exists, return -1.
