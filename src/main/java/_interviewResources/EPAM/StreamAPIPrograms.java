@@ -1,6 +1,7 @@
 package _interviewResources.EPAM;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -112,6 +113,9 @@ public class StreamAPIPrograms {
 
         // Question 25
         findLongestString();
+
+        //Avg employee ages using Stream
+        avgEmployeeAges();
     }
 
 
@@ -845,6 +849,29 @@ public class StreamAPIPrograms {
                 .orElse("Not Found");
 
         System.out.println("25. Longest name : " + result);
+    }
+
+/*Q2. How do you average employee ages using a Map?
+Answer: Stream the Map values, convert them to ints and call average(). Handle an empty map explicitly.
+*/
+
+    public static void avgEmployeeAges() {
+        Map<String, Integer> employees = new HashMap<>();
+
+        employees.put("Rahul", 25);
+        employees.put("Priya", 30);
+        employees.put("Amit", 35);
+        employees.put("Sneha", 28);
+        employees.put("Ravi", 32);
+
+        double averageAge = employees.values()
+                .stream()
+                .mapToInt(x -> x.intValue())
+                //.mapToInt(Integer::intValue)
+                .average()
+                .orElse(0);
+
+        System.out.println("26. Average age: " + averageAge);
     }
 }
 
