@@ -2,29 +2,49 @@ package JAVA.Programs.javaPrograme2;
 
 public class RemoveNumLetterAlphaFromString {
 
-	// write a program to separate alphabets and numbers and special characterfrom
-	// string
-	// https://stackoverflow.com/questions/15116705/how-to-separate-letters-and-symbols-from-string-almost-done
+	/*
+	 * Write a program to separate alphabets, numbers
+	 * and special characters from a String.
+	 *
+	 * Input:
+	 * I123Love7You$%&@
+	 *
+	 * Output:
+	 * Alphabets  : ILoveYou
+	 * Numbers    : 1237
+	 * Symbols    : $%&@
+	 */
 
 	public static void main(String[] args) {
 
 		String str = "I123Love7You$%&@";
-		StringBuffer alphabets = new StringBuffer();
-		StringBuffer Numbers = new StringBuffer();
-		StringBuffer symbols = new StringBuffer();
+
+		StringBuilder alphabets = new StringBuilder();
+		StringBuilder numbers = new StringBuilder();
+		StringBuilder symbols = new StringBuilder();
 
 		for (int i = 0; i < str.length(); i++) {
+
 			char Fstr = str.charAt(i);
+
 			if (Character.isAlphabetic(Fstr)) {
+
 				alphabets.append(Fstr);
+
 			} else if (Character.isDigit(Fstr)) {
-				Numbers.append(Fstr);
+
+				numbers.append(Fstr);
+
 			} else {
+
 				symbols.append(Fstr);
 			}
 		}
-		System.out.println("Alphabets in string: " + alphabets.toString());
-		System.out.println("Numbers in string: " + Numbers.toString());
-		System.out.println("Special Symbols in string: " + symbols.toString());
+
+		System.out.println("Alphabets in string: " + alphabets);
+
+		System.out.println("Numbers in string: " + numbers);
+
+		System.out.println("Special Symbols in string: " + symbols);
 	}
 }
