@@ -18,6 +18,7 @@ public class CountFirstNonRepeatingCharacter {
     public static char countFirstNonRepeatingChar(String input) {
 
         String inputString = "geeksforgeeks";  //
+        System.out.println("inputString : " + inputString);
         // Create a HashMap to store character counts
         Map<Character, Integer> charCount = new HashMap<>();
 

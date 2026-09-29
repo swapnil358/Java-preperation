@@ -25,7 +25,7 @@ public class TwoSum_LeetCode {
 
     public static int[] twoSum(int[] arr, int target) {
 //        int[] arr = {2, 7, 11, 15};
-//        int target = 90;
+//        int target = 9;
 
 
         if (arr == null) {

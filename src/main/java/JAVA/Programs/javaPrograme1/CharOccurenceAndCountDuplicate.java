@@ -6,7 +6,7 @@ import java.util.Set;
 public class CharOccurenceAndCountDuplicate {
 
 	public static void CharDupCount(String inputString) {
-
+		//inputString = maharajam
 		HashMap<Character, Integer> Counter = new HashMap<Character, Integer>();
 
 		char[] str = inputString.toCharArray();
@@ -19,10 +19,10 @@ public class CharOccurenceAndCountDuplicate {
 			}
 		}
 		System.out.println(Counter);
-
+		System.out.println("Dup char: "+" " + Counter);
 		//print only more than 1 repetitive character
 		  Set<Character> SetString = Counter.keySet();
-		  System.out.println("Dup char: "+" " + inputString);
+		  System.out.println("Set<Character> : "+" " + SetString);
 
 		for (Character s : SetString) {
 			if (Counter.get(s) > 1) {

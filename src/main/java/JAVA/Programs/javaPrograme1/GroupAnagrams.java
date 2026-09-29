@@ -45,7 +45,7 @@ List<List<String>>
 public class GroupAnagrams {
 
     public static List<List<String>> groupAnagrams(String[] strs) {
-
+        /// String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
         // Map stores:
         // sorted characters -> list of anagram strings
         Map<String, List<String>> map = new HashMap<>();
@@ -117,14 +117,7 @@ public class GroupAnagrams {
 
     public static void main(String[] args) {
 
-        String[] strs = {
-                "eat",
-                "tea",
-                "tan",
-                "ate",
-                "nat",
-                "bat"
-        };
+        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
 
         List<List<String>> result = groupAnagrams(strs);
         System.out.println(result);

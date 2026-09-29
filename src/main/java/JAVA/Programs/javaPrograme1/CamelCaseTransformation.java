@@ -3,6 +3,9 @@ package JAVA.Programs.javaPrograme1;
 public class CamelCaseTransformation {
 
     public static String camelCase(String str) {
+
+        // String str = "my name Is swapnil"
+
         // Remove all non-alphabetic characters except delimiters
         str = str.replaceAll("[^a-zA-Z\\s\\-_]", "");
 

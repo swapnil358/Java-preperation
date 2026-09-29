@@ -19,8 +19,8 @@ public class CapitaliseFirstLetter {
 			// Capitalize the first letter of each word and append to the result
 			for (String word : words) {
 				if (word.length() > 0) {
-					char firstChar = Character.toUpperCase(word.charAt(0));
-					String remainingChars = word.substring(1);
+					String firstChar = word.substring(0,1).toUpperCase();
+					String remainingChars = word.substring(1).toLowerCase();
 					result.append(firstChar).append(remainingChars).append(" ");
 				}
 			}
