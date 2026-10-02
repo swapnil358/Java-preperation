@@ -34,91 +34,44 @@ package JAVA.Programs.DataStructurePrgm;
 public class MaxProductInArray {
 
     public static void main(String[] args) {
+        int[] arr = {5,4,1,9,10};
 
-        int[] arr = {4, 5, 7, 3, 2, 89};
-
-        // Initialize highest and secondHighest
-        // with the smallest possible integer value.
-        //
-        // This allows the program to work even if
-        // the array contains negative numbers.
         int highest = arr[0];
-        int secondHighest = arr[0];
-
-        // Initialize lowest and secondLowest
-        // with the largest possible integer value.
+        int s_highest = arr[0];
         int lowest = arr[0];
-        int secondLowest = arr[0];
+        int s_lowest = arr[0];
 
-        // Traverse the array only once.
-        for (int num : arr) {
-
-            // -----------------------------------------
-            // Find highest and second highest
-            // -----------------------------------------
-
-            // If current number is greater than highest,
-            // current number becomes the new highest.
-            if (num > highest) {
-
-                // Old highest becomes second highest.
-                secondHighest = highest;
-
-                // Current number becomes highest.
+        for(int num : arr){
+            if(num > highest){
+                s_highest = highest;
                 highest = num;
 
-            } else if (num > secondHighest) {
+            }else if(num > s_highest){
+                s_highest = num;
 
-                // If current number is not the highest
-                // but is greater than secondHighest,
-                // update secondHighest.
-                secondHighest = num;
-            }
-
-            // -----------------------------------------
-            // Find lowest and second lowest
-            // -----------------------------------------
-
-            // If current number is smaller than lowest,
-            // current number becomes the new lowest.
-            if (num < lowest) {
-
-                // Old lowest becomes second lowest.
-                secondLowest = lowest;
-
-                // Current number becomes lowest.
+            }else if(num < lowest){
+                s_lowest = lowest;
                 lowest = num;
-
-            } else if (num < secondLowest) {
-
-                // If current number is not the lowest
-                // but is smaller than secondLowest,
-                // update secondLowest.
-                secondLowest = num;
+            }else if(num > s_lowest){
+                s_lowest = num;
             }
+
         }
+        System.out.println("highest: " + highest);
+        System.out.println("s_highest: " + s_highest);
+        System.out.println("lowest: " + lowest);
+        System.out.println("s_lowest: " + s_lowest);
 
-        // Print the two largest and two smallest values.
-        System.out.println("Highest: " + highest);
-        System.out.println("Second Highest: " + secondHighest);
-        System.out.println("Lowest: " + lowest);
-        System.out.println("Second Lowest: " + secondLowest);
+        int prod1 = highest * s_highest;
+        int prod2 = lowest * s_lowest;
 
-        // Product of two largest numbers.
-        int product1 = highest * secondHighest;
+        System.out.println("prod1: " + prod1);
+        System.out.println("prod2: " + prod2);
 
-        // Product of two smallest numbers.
-        //
-        // Important:
-        // Negative × Negative = Positive.
-        int product2 = lowest * secondLowest;
-
-        // The maximum product can be either:
-        // highest * secondHighest
-        // OR
-        // lowest * secondLowest
-        int maxProduct = Math.max(product1, product2);
-
-        System.out.println("Maximum product is: " + maxProduct);
+        if(prod1 > prod2){
+            System.out.println("Maximum product is: " + prod1);
+        }else{
+            System.out.println("Maximum product is: " + prod2);
+        }
     }
 }
