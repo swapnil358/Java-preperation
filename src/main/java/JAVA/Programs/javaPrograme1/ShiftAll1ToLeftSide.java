@@ -110,7 +110,9 @@ public class ShiftAll1ToLeftSide {
 	 */
 	private static void method3(int[] arr) {
 
-		int leftPointer = 0;
+		//int[] arr1 = {1, 1, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3};
+
+		int leftPointer = 0; //2
 
 		for (int i = 0; i < arr.length; i++) {
 

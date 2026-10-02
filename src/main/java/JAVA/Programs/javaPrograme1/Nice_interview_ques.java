@@ -31,6 +31,8 @@ public class Nice_interview_ques {
 		method1();
 
 		method2();
+
+		method3();
 	}
 
 
@@ -199,5 +201,26 @@ public class Nice_interview_ques {
 
 		System.out.println("Input : " + Arrays.toString(a));
 		System.out.println("Output: " + Arrays.toString(b));
+	}
+
+	public static void method3(){
+		int[] arr = {1, 2, 3};
+		int[] result = new int[arr.length];
+
+		for (int i = 0; i < arr.length; i++) {
+
+			int product = 1;
+
+			for (int j = 0; j < arr.length; j++) {
+
+				if (i != j) {
+					product = product * arr[j];
+				}
+			}
+
+			result[i] = product;
+		}
+
+		System.out.println(Arrays.toString(result));
 	}
 }

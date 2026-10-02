@@ -116,6 +116,9 @@ public class StreamAPIPrograms {
 
         //Avg employee ages using Stream
         avgEmployeeAges();
+
+        //Sort by keys from map
+        softMapByKeys();
     }
 
 
@@ -866,12 +869,36 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
 
         double averageAge = employees.values()
                 .stream()
-                .mapToInt(x -> x.intValue())
+                .mapToInt(x -> x.intValue()) //mapToInt() converts each Integer object into a primitive int.
                 //.mapToInt(Integer::intValue)
                 .average()
                 .orElse(0);
 
         System.out.println("26. Average age: " + averageAge);
+    }
+
+    public static void softMapByKeys() {
+        System.out.print("27. Sort by keys: ");
+        Map<String, Integer> emp= new HashMap<>();
+
+        emp.put("Rahul", 25);
+        emp.put("Priya", 30);
+        emp.put("Amit", 35);
+        emp.put("Sneha", 28);
+        emp.put("Ravi", 32);
+
+        emp.keySet()
+                .stream().sorted()
+                        .forEach(s-> System.out.println(s+" "));
+
+        //OR
+        System.out.println("***** Another Approach ******");
+        List<String> sorted = emp.keySet()
+                .stream()
+                .sorted()
+                .toList();
+
+        System.out.println(sorted);
     }
 }
 
