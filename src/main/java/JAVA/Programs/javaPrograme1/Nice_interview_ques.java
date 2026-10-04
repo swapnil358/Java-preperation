@@ -33,6 +33,8 @@ public class Nice_interview_ques {
 		method2();
 
 		method3();
+
+		method4();
 	}
 
 
@@ -204,6 +206,9 @@ public class Nice_interview_ques {
 	}
 
 	public static void method3(){
+
+		//Video explaination - https://youtu.be/TW2m8m_FNJE
+
 		int[] arr = {1, 2, 3};
 		int[] result = new int[arr.length];
 
@@ -223,4 +228,40 @@ public class Nice_interview_ques {
 
 		System.out.println(Arrays.toString(result));
 	}
+
+
+	public static void method4(){
+
+				int[] arr = {1, 2, 3, 4};
+
+				int[] output = new int[arr.length];
+
+				// STEP 1: Calculate LEFT products
+				int left = 1;
+
+				for (int i = 0; i < arr.length; i++) {
+
+					// Store product of elements on the left
+					output[i] = left;
+
+					// Update left product
+					left *= arr[i];
+				}
+
+				// STEP 2: Calculate RIGHT products
+				int right = 1;
+
+				for (int i = arr.length - 1; i >= 0; i--) {
+
+					// Multiply existing left product by right product
+					output[i] *= right;
+
+					// Update right product
+					right *= arr[i];
+				}
+
+				// STEP 3: Print final output
+				System.out.println(Arrays.toString(output));
+			}
+
 }
