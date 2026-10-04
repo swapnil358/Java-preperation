@@ -5,3 +5,5 @@ dist/*
 target/
 *.class
 *.log
+# Ignore Java practice programs
+/src/main/java/PracticePrograms/
