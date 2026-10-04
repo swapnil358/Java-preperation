@@ -28,11 +28,11 @@ public class Nice_interview_ques {
 		System.out.println("   ARRAY PAIR MULTIPLICATION PROGRAM");
 		System.out.println("============================================");
 
-		method1();
+		method1();  //basic
 
 		method2();
 
-		method3();
+		method3();   //best  //using brute force algo
 
 		method4();
 	}
