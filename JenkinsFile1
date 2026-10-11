@@ -1,7 +1,6 @@
 pipeline {
     agent any
-
-    options {
+options {
         timestamps()
         timeout(time: 60, unit: 'MINUTES')
         buildDiscarder(logRotator(
