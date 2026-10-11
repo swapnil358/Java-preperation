@@ -45,8 +45,8 @@ public class MergeTwoUnsortedArrays {
         int[] b = {90, 70, 80};
 
         // Step 1: Sort both arrays.
-        Arrays.sort(a);
-        Arrays.sort(b);
+        Arrays.sort(a);                 // [10, 20, 30]
+        Arrays.sort(b);                 // [70, 80, 90]
 
         // Step 2: Create array large enough for both arrays.
         int[] c = new int[a.length + b.length];

@@ -1,36 +1,57 @@
 package JAVA.Programs.javaPrograme1;
 
-public class RemoveDuplicateWordsFromString {
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
-	// Find the duplicate strings in a given statement and remove them?
-	// https://www.qafox.com/java-for-testers-interview-questions-and-answers-part-7/
+public class RemoveDuplicateWordsFromString {
 
 	public static void main(String[] args) {
 
-		String input = "Welcome to QAScript Java Interview Question in QAScript";
+		usingForLoop();
+		usingStream();
+	}
 
-		System.out.println("Before removing duplicates: "+ input);
-		String[] words = input.split(" ");
+	private static void usingForLoop() {
+		String input = "Welcome to QAScript Java Interview Question Java in geeks";
+
+		System.out.println("Before removing duplicates: " + input);
+
+		String[] words = input.split("\\s+");
 
 		for (int i = 0; i < words.length; i++) {
 			for (int j = i + 1; j < words.length; j++) {
 
-				if (words[i].equals(words[j])) {
+				if (words[i] != null && words[i].equals(words[j])) {
 					words[j] = null;
-
 				}
 			}
 		}
 
-		String rev="";
-		for (int k = 0; k < words.length; k++) {
-			if (words[k] != null) {
-				rev= rev+" "+words[k];
-				
+		String result = "";
+
+		for (int i = 0; i < words.length; i++) {
+			if (words[i] != null) {
+				if (!result.isEmpty()) {
+					result= result + " ";
+				}
+				result= result +  words[i];
 			}
 		}
-		System.out.println("After removing duplicates: "+ rev);
 
+		System.out.println("After removing duplicates: " + result);
+	}
+
+
+	public static void usingStream(){
+
+		String input =
+				"Welcome to QAScript Java Interview Question Java in geeks";
+
+		String result = Arrays.stream(input.split("\\s+"))
+				.distinct()
+				.collect(Collectors.joining(" "));
+
+		System.out.println(result);
 	}
 
 }

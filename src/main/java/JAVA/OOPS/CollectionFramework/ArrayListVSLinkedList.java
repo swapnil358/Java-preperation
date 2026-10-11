@@ -11,12 +11,14 @@ public class ArrayListVSLinkedList {
      * Insertion and Deletion:
      +=========================
      * ArrayList: Insertion and deletion operations can be slower, especially when elements need to be added or removed from the middle of the list, as it may require shifting elements.
+     *
      * LinkedList: Insertion and deletion operations are generally faster, especially when manipulating elements in the middle of the list, as it involves updating pointers.
 
 
      * Access Time:
      *===============
      * ArrayList: Provides fast random access to elements using index. Retrieving an element at a specific index is efficient.
+     *
      * LinkedList: Sequential access is faster. Random access involves traversing the list from the beginning or end, which can be slower compared to an ArrayList.
      *
      *

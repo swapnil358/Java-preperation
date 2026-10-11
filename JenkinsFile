@@ -1,0 +1,106 @@
+
+pipeline {
+    agent any
+
+    options {
+        timestamps()
+        timeout(time: 60, unit: 'MINUTES')
+        buildDiscarder(logRotator(
+            numToKeepStr: '10'
+        ))
+    }
+
+    parameters {
+        choice(
+            name: 'TEST_ENV',
+            choices: ['QA', 'STAGING', 'DEV'],
+            description: 'Environment for test execution'
+        )
+
+        string(
+            name: 'TEST_SUITE',
+            defaultValue: 'testng.xml',
+            description: 'TestNG suite XML file'
+        )
+
+        booleanParam(
+            name: 'RUN_PARALLEL',
+            defaultValue: false,
+            description: 'Run tests in parallel'
+        )
+    }
+
+    environment {
+        MAVEN_OPTS = '-Xmx1024m'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'Checking out automation code...'
+                checkout scm
+            }
+        }
+
+        stage('Verify Tools') {
+            steps {
+                bat 'java -version'
+                bat 'mvn -version'
+            }
+        }
+
+        stage('Compile') {
+            steps {
+                bat 'mvn -B clean test-compile'
+            }
+        }
+
+        stage('Execute Automation Tests') {
+            steps {
+                script {
+                    if (params.RUN_PARALLEL) {
+                        bat """
+                            mvn -B test
+                            -Denv=${params.TEST_ENV}
+                            -Dsurefire.suiteXmlFiles=${params.TEST_SUITE}
+                            -DthreadCount=4
+                        """
+                    } else {
+                        bat """
+                            mvn -B test
+                            -Denv=${params.TEST_ENV}
+                            -Dsurefire.suiteXmlFiles=${params.TEST_SUITE}
+                        """
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            junit(
+                testResults: '**/surefire-reports/*.xml',
+                allowEmptyResults: true
+            )
+
+            archiveArtifacts(
+                artifacts: '**/surefire-reports/**',
+                allowEmptyArchive: true
+            )
+        }
+
+        success {
+            echo 'Automation execution completed successfully.'
+        }
+
+        failure {
+            echo 'Automation execution failed. Check the console log and test reports.'
+        }
+
+        cleanup {
+            echo 'Build processing completed.'
+        }
+    }
+}

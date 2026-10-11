@@ -1,89 +1,51 @@
 package JAVA.Programs.DataStructurePrgm;
 
-// Write a program for Binary Search
-
-// Binary Search works only when the array is SORTED.
-
-// Approach:
-// 1. Set the lower index (li) to 0.
-// 2. Set the higher index (hi) to the last index.
-// 3. Find the middle index (mi).
-// 4. Compare the middle element with the search element.
-// 5. If middle element == search element -> element found.
-// 6. If middle element < search element -> search in the RIGHT half.
-// 7. If middle element > search element -> search in the LEFT half.
-// 8. Continue until the element is found or li becomes greater than hi.
-//
-// Time Complexity:
-// Best Case  -> O(1)
-// Worst Case -> O(log n)
-
 public class BinarySearch {
+	/*
+	* Case	Complexity	Explanation
+		Best-case time	\(O(1)\)	The element is found at the middle in the first iteration.
+		Average-case time	\(O(\log n)\)	The search range is halved in each iteration.
+		Worst-case time	\(O(\log n)\)	The algorithm continues halving the range until the element is found or the range becomes empty.
+		Auxiliary space	\(O(1)\)	Only a few variables (li, hi, mi, found) are used.
+	* */
 
-	public static void BiSearch() {
+	public static void binarySearch() {
 
 		// Binary Search requires a sorted array
 		int[] a = {1, 4, 8, 9, 12, 22, 34, 54, 78, 89};
 
-		// li = Lower Index
-		// Initially, the search starts from the first element
-		int li = 0;
+		int search = 78;
 
-		// hi = Higher Index
-		// Initially, the search ends at the last element
+		int li = 0;
 		int hi = a.length - 1;
 
-		// Search element
-		int srch = 78;
+		boolean found = false;
 
-		// Continue searching while the search range is valid
 		while (li <= hi) {
 
-			// Calculate the middle index
-			// Example: li = 0, hi = 9
-			// mi = (0 + 9) / 2 = 4
-			int mi = (li + hi) / 2;
+			// Calculate middle index
+			int mi = li + (hi - li) / 2;
 
-			// Check whether the middle element is the element we need
-			if (a[mi] == srch) {
+			if (a[mi] == search) {
 
 				System.out.println("Element found at index " + mi + " and position " + (mi + 1));
-
-				// Stop searching because the element is found
+				found = true;
 				break;
-			}
 
-			// If middle element is smaller than search element,
-			// the required element can only be present in the RIGHT half.
-			//
-			// Therefore, move the lower index after the middle index.
-			else if (a[mi] < srch) {
-
+			} else if (search > a[mi]) {
 				li = mi + 1;
-			}
 
-			// If middle element is greater than search element,
-			// the required element can only be present in the LEFT half.
-			//
-			// Therefore, move the higher index before the middle index.
-			else {
-
+			} else {
 				hi = mi - 1;
 			}
 		}
 
-		// If li becomes greater than hi,
-		// there is no valid search range left.
-		// This means the element was not found.
-		if (li > hi) {
-
+		if (!found) {
 			System.out.println("Element not found");
 		}
 	}
 
 	public static void main(String[] args) {
-
-		// Calling the Binary Search method
-		BiSearch();
+		binarySearch();
 	}
 }

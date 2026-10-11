@@ -26,7 +26,7 @@ public class AInsertElementInArray {
         // position where the new element needs to be inserted.
         for (int i = a.length - 1; i >= position; i--) {
 
-            a[i] = a[i - 1];
+            a[i] = a[i - 1];  //[10, 20, 30, 40, 50, 50, 70, 80]
         }
 
         // Insert the new element.

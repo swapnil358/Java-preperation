@@ -76,9 +76,7 @@ public class OrderService {
         // We use <= 0 because one condition handles both zero
         // and negative quantities.
         if (quantity <= 0) {
-            throw new IllegalArgumentException(
-                    "Quantity must be greater than 0"
-            );
+            throw new IllegalArgumentException("Quantity must be greater than 0");
         }
 
 
@@ -92,9 +90,7 @@ public class OrderService {
         // price = 0 may be valid depending on the business requirement.
         // For example, a free/promotional item could have a price of 0.
         if (price.compareTo(BigDecimal.ZERO) < 0) {
-            throw new IllegalArgumentException(
-                    "Price cannot be negative"
-            );
+            throw new IllegalArgumentException("Price cannot be negative");
         }
 
 
@@ -142,10 +138,7 @@ public class OrderService {
         // Quantity = 2
         //
         // Item total = 21.00
-        orderService.addItem(
-                new BigDecimal("10.50"),
-                2
-        );
+        orderService.addItem(new BigDecimal("10.50"), 2);
 
 
         // Another valid item:
@@ -153,10 +146,7 @@ public class OrderService {
         // Quantity = 2
         //
         // Item total = 10.50
-        orderService.addItem(
-                new BigDecimal("5.25"),
-                2
-        );
+        orderService.addItem(new BigDecimal("5.25"), 2);
 
 
         // Expected total:

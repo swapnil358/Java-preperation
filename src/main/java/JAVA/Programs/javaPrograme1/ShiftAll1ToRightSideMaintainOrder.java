@@ -6,7 +6,7 @@ public class ShiftAll1ToRightSideMaintainOrder {
 
     //Easy
     public static void main(String[] args) {
-       // method1();
+        method1();
         System.out.println(Arrays.toString(moveOnes()));
     }
 

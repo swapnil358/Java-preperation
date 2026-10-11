@@ -13,8 +13,8 @@ public class ReverseEachWordInSentence {
 		reverseWord2();
 		
 		reverse3();
-		
-		usingStringBuffer();
+
+		usingStringBuilderReverse();
 		
 	}
 	
@@ -37,7 +37,8 @@ public class ReverseEachWordInSentence {
 	}
 	
 	
-	public static void usingStringBuffer() {
+	public static void usingStringBuilderReverse() {
+		System.out.println("Using string builder reverse");
 		String str = "My name is Swapnil";
 		StringBuilder sb = new StringBuilder(str);
 		sb.reverse();

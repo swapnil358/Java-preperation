@@ -9,15 +9,17 @@ public class ReverseArray {
         int start = 0;
         int end = arr.length - 1;
         while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+            if(arr[start]<arr[end]) {
+                int temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+                start++;
+                end--;
+            }
         }
 
         for (int a : arr) {
-            System.out.println(a);
+            System.out.print(a);
         }
     }
 }

@@ -119,6 +119,9 @@ public class StreamAPIPrograms {
 
         //Sort by keys from map
         softMapByKeys();
+
+        //remove Duplicate Word From String
+        removeDuplicateWordFromString();
     }
 
 
@@ -542,7 +545,7 @@ public class StreamAPIPrograms {
                 Arrays.asList(10, 20, 30, 40);
 
         int sum = numbers.stream()
-                .mapToInt(n -> n.intValue())
+                .mapToInt(n -> n)
                 .sum();
 
         System.out.println("16. Sum : " + sum);
@@ -568,7 +571,7 @@ public class StreamAPIPrograms {
                 Arrays.asList(10, 20, 30, 40);
 
         double average = numbers.stream()
-                .mapToInt(n -> n.intValue())
+                .mapToInt(n -> n)
                 .average()
                 .orElse(0);
 
@@ -899,6 +902,19 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
                 .toList();
 
         System.out.println(sorted);
+    }
+
+
+    public static void removeDuplicateWordFromString(){
+        System.out.println("28. remove Duplicate Word From String: ");
+        String input =
+                "Welcome to QAScript Java Interview Question Java in geeks";
+        System.out.println("Original: " + input);
+        String result = Arrays.stream(input.split("\\s+"))
+                .distinct()
+                .collect(Collectors.joining(" "));
+
+        System.out.println("Duplicate removed: "+ result);
     }
 }
 

@@ -78,21 +78,21 @@ public class AnagramString {
 	// APPROACH 2: USING HASHMAP
 	// ============================================================
 
+
+
 	static void isAnagramUsingMap(String str1, String str2) {
 
 		/*
-		 * First remove spaces and convert both strings to lowercase.
+		 * Remove spaces and convert both strings to lowercase.
 		 *
-		 * Example:
-		 *
-		 * "I love you"  -> "iloveyou"
-		 * "you love i"  -> "youlovei"
+		 * "I love you" -> "iloveyou"
+		 * "you love i" -> "youlovei"
 		 */
 
 		String s1 = str1.replaceAll("\\s+", "").toLowerCase();
 		String s2 = str2.replaceAll("\\s+", "").toLowerCase();
 
-
+		// If lengths are different, they cannot be anagrams
 		if (s1.length() != s2.length()) {
 			System.out.println(str1 + " and " + str2 + " are not anagrams");
 			return;
@@ -100,158 +100,30 @@ public class AnagramString {
 
 		Map<Character, Integer> map = new HashMap<>();
 
+		// Count characters from first string
 		for (char ch : s1.toCharArray()) {
-
-			/*
-			 * getOrDefault(ch, 0)
-			 *
-			 * This checks whether the character already exists
-			 * in the Map.
-			 *
-			 * If character exists:
-			 *
-			 *     return its current count
-			 *
-			 * If character does not exist:
-			 *
-			 *     return 0
-			 *
-			 * Example:
-			 *
-			 * First time we see 'p':
-			 *
-			 * map.getOrDefault('p', 0)
-			 *
-			 * 'p' does not exist, so it returns 0.
-			 *
-			 * Then:
-			 *
-			 * 0 + 1 = 1
-			 *
-			 * map.put('p', 1);
-			 *
-			 *
-			 * Second time we see 'p':
-			 *
-			 * map.getOrDefault('p', 0)
-			 *
-			 * 'p' already exists with value 1.
-			 *
-			 * So it returns 1.
-			 *
-			 * Then:
-			 *
-			 * 1 + 1 = 2
-			 *
-			 * map.put('p', 2);
-			 *
-			 * Therefore:
-			 *
-			 * map.put(ch, map.getOrDefault(ch, 0) + 1);
-			 *
-			 * means:
-			 *
-			 * "Get the current count of the character.
-			 *  If it does not exist, use 0.
-			 *  Increase the count by 1.
-			 *  Store the updated count back in the Map."
-			 */
-
-			map.put(ch, map.get(ch) + 1);
+			if(map.containsKey(ch)){
+				map.put(ch, map.get(ch)+ 1);
+			}else{
+				map.put(ch, 1);
+			}
 		}
 
+		System.out.println(map);
 
-		/*
-		 * --------------------------------------------------------
-		 * PROCESS SECOND STRING
-		 * --------------------------------------------------------
-		 *
-		 * Now we process the second string.
-		 *
-		 * Instead of increasing the count, we DECREASE the count.
-		 *
-		 * Why?
-		 *
-		 * The first string tells us how many times each character
-		 * should occur.
-		 *
-		 * The second string uses those characters one by one.
-		 *
-		 * If all counts become zero, both strings contain exactly
-		 * the same characters with exactly the same frequency.
-		 */
-
+		// Remove character counts using second string
 		for (char ch : s2.toCharArray()) {
-			/*
-			 * Check whether this character exists in the Map.
-			 *
-			 * If it doesn't exist, the second string contains a
-			 * character that was not present in the first string.
-			 *
-			 * Therefore, they are not anagrams.
-			 */
 
 			if (!map.containsKey(ch)) {
 				System.out.println(str1 + " and " + str2 + " are not anagrams");
 				return;
 			}
-
-
-			/*
-			 * Decrease the frequency by 1.
-			 *
-			 * Example:
-			 *
-			 * Before:
-			 *
-			 * p -> 2
-			 *
-			 * After:
-			 *
-			 * p -> 1
-			 */
-
 			map.put(ch, map.get(ch) - 1);
-
-
-			/*
-			 * If the frequency becomes zero, remove the character
-			 * from the Map.
-			 *
-			 * Example:
-			 *
-			 * p -> 1
-			 *
-			 * After processing another 'p':
-			 *
-			 * p -> 0
-			 *
-			 * There is no need to keep p in the Map.
-			 *
-			 * Therefore:
-			 *
-			 * map.remove('p');
-			 */
 
 			if (map.get(ch) == 0) {
 				map.remove(ch);
 			}
 		}
-
-
-		/*
-		 * --------------------------------------------------------
-		 * FINAL CHECK
-		 * --------------------------------------------------------
-		 *
-		 * If the Map is empty, it means all character frequencies
-		 * became zero.
-		 *
-		 * Therefore, both strings contain exactly the same
-		 * characters with the same frequency.
-		 *
-		 * Hence, they are anagrams.
-		 */
 
 		if (map.isEmpty()) {
 			System.out.println(str1 + " and " + str2 + " are anagrams");

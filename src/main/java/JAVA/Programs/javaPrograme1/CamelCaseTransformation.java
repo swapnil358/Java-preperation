@@ -21,7 +21,7 @@ public class CamelCaseTransformation {
             if (!word.isEmpty()) {
                 // Capitalize the first letter and append the rest
                 camelCase.append(word.substring(0, 1).toUpperCase())
-                        .append(word.substring(1).toLowerCase());
+                        .append(word.substring(1).toLowerCase()).append(" ");
             }
         }
 

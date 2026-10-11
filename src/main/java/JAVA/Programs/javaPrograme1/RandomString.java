@@ -2,7 +2,7 @@ package JAVA.Programs.javaPrograme1;
 
 import java.util.Random;
 
-public class RandonString {
+public class RandomString {
 
 	public static void getSaltString() {
 		
@@ -25,7 +25,7 @@ public class RandonString {
 	
 	public static void main(String[] args) {
 
-		RandonString rn = new RandonString();
+		RandomString rn = new RandomString();
 		rn.getSaltString();
 
 	}
