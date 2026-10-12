@@ -1,0 +1,125 @@
+
+name: Java TestNG Automation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      TEST_ENV:
+        description: Environment for test execution
+        type: choice
+        options:
+          - QA
+          - STAGING
+          - DEV
+        default: QA
+        required: true
+
+      TEST_SUITE:
+        description: TestNG suite XML file
+        type: string
+        default: testng.xml
+        required: true
+
+      RUN_PARALLEL:
+        description: Run tests in parallel
+        type: boolean
+        default: false
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: testng-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  automation-tests:
+    name: Execute TestNG Automation
+    runs-on: windows-latest
+    timeout-minutes: 60
+
+    env:
+      MAVEN_OPTS: "-Xmx1024m"
+      TEST_ENV: ${{ inputs.TEST_ENV || 'QA' }}
+      TEST_SUITE: ${{ inputs.TEST_SUITE || 'testng.xml' }}
+      RUN_PARALLEL: ${{ inputs.RUN_PARALLEL || 'false' }}
+
+    steps:
+      # Checkout
+      - name: Checkout automation code
+        uses: actions/checkout@v4
+
+      # Setup Java
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+
+      # Verify tools
+      - name: Verify Java
+        run: java -version
+
+      - name: Verify Maven
+        run: mvn -version
+
+      # Compile
+      - name: Compile automation code
+        run: mvn -B clean test-compile
+
+      # Execute tests
+      - name: Execute TestNG tests
+        shell: pwsh
+        run: |
+          $args = @(
+            "-B",
+            "test",
+            "-Denv=$env:TEST_ENV",
+            "-Dsurefire.suiteXmlFiles=$env:TEST_SUITE"
+          )
+
+          if ($env:RUN_PARALLEL -eq "true") {
+            $args += "-DthreadCount=4"
+          }
+
+          mvn @args
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+
+      # Publish JUnit test results
+      - name: Upload TestNG XML reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: "**/surefire-reports/*.xml"
+          if-no-files-found: warn
+          retention-days: 14
+
+      # Archive all Surefire reports
+      - name: Archive Surefire reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-report-files
+          path: "**/surefire-reports/**"
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Execution summary
+        if: always()
+        shell: pwsh
+        run: |
+          if ("${{ job.status }}" -eq "success") {
+            Write-Host "Automation execution completed successfully."
+          } else {
+            Write-Host "Automation execution failed. Check logs and reports."
+          }
+          Write-Host "Build processing completed."
