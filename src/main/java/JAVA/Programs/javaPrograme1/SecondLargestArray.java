@@ -76,6 +76,37 @@ public class SecondLargestArray {
 	    System.out.println("The second largest element is: " + secondLargest);
 
 
+		thirdLargest();
+
+
+	}
+
+	public static void thirdLargest(){
+
+		System.out.println("************ 3rd Largest ***************");
+		int[] arr = {100,9,99};
+
+		int largest=Integer.MIN_VALUE;
+		int slargest = Integer.MIN_VALUE;
+		int thirdLargest = Integer.MIN_VALUE;
+
+		for(int num : arr){
+
+			if(num > largest){
+				thirdLargest = slargest;
+				slargest = largest;
+				largest = num;
+			}else if(num > slargest){
+				thirdLargest = slargest;
+				slargest =num;
+			}else if(num > thirdLargest){
+				thirdLargest = num;
+			}
+
+		}
+		System.out.println("slargest: " + slargest);
+		System.out.println("largest: " + largest);
+		System.out.println("ThirdLargest: " + thirdLargest);
 	}
 
 }
