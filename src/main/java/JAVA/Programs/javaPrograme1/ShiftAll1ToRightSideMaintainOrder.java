@@ -42,6 +42,9 @@ public class ShiftAll1ToRightSideMaintainOrder {
                 nonZero++;
             }
         }
+        for (int i = nonZero; i < arr.length; i++) {
+            res[i] = 1;
+        }
         return res;
     }
 }

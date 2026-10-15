@@ -202,7 +202,7 @@ public class StringImmutabilityExamples {
      * Here the content is equal.
      */
     private static void example7() {
-
+        System.out.println("******" +"example7"+ "******");
         System.out.println("*** == vs equals()");
 
         String s1 = "Java";

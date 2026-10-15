@@ -74,6 +74,8 @@ public class ShiftAll1ToLeftSide {
 	 */
 	private static void method2(int[] arr) {
 
+		//int[] arr2 = {1, 1, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3};
+
 		int left = 0;
 		int right = arr.length - 1;
 

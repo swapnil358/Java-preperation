@@ -14,7 +14,7 @@ public class BinarySearch {
 		// Binary Search requires a sorted array
 		int[] a = {1, 4, 8, 9, 12, 22, 34, 54, 78, 89};
 
-		int search = 78;
+		int search = 8;
 
 		int li = 0;
 		int hi = a.length - 1;
@@ -23,8 +23,10 @@ public class BinarySearch {
 
 		while (li <= hi) {
 
+
 			// Calculate middle index
-			int mi = li + (hi - li) / 2;
+			int mi = (li + hi) / 2;
+
 
 			if (a[mi] == search) {
 
@@ -38,6 +40,7 @@ public class BinarySearch {
 			} else {
 				hi = mi - 1;
 			}
+
 		}
 
 		if (!found) {
