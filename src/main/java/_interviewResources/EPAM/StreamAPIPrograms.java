@@ -156,11 +156,12 @@ public class StreamAPIPrograms {
         //if problem is given    String[] str = {"Zara", "Nike", "Apple", "Samsung"};
         String[] str = {"Zara", "Nike", "Apple", "Samsung"};
 
-        List<String> result1 = Arrays.stream(str)
+        Arrays.stream(str)
                 .filter(s -> s.length() > 4)
-                .toList();
+                .forEach(name -> System.out.println(name));;
 
-        System.out.println("1. Filter by length : " + result1);
+        //System.out.println("1. Filter by length : " );
+
     }
 
 

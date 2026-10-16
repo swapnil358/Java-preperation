@@ -13,21 +13,26 @@ public class POJORequestResponseExample {
         private String name;
         private String email;
         private int age;
+        private Address address;
 
 
         // Default constructor
         public User() {
         }
+
         // Getters
         public int getId() {
             return id;
         }
+
         public String getName() {
             return name;
         }
+
         public String getEmail() {
             return email;
         }
+
         public int getAge() {
             return age;
         }
@@ -36,17 +41,67 @@ public class POJORequestResponseExample {
         public void setId(int id) {
             this.id = id;
         }
+
         public void setName(String name) {
             this.name = name;
         }
+
         public void setEmail(String email) {
             this.email = email;
         }
+
         public void setAge(int age) {
             this.age = age;
         }
+
+        public Address getAddress(){
+            return address;
+        }
+
+        public void setAddress(Address address){
+            this.address = address;
+        }
+
     }
 
+   public static class Address {
+        private String city;
+        private String state;
+        private String country;
+
+        public Address() {
+        }
+
+        public Address(String city, String state, String country) {
+            this.city = city;
+            this.state = state;
+            this.country = country;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public String getState() {
+            return state;
+        }
+
+        public void setState(String state) {
+            this.state = state;
+        }
+
+        public String getCountry() {
+            return country;
+        }
+
+        public void setCountry(String country) {
+            this.country = country;
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -61,12 +116,22 @@ public class POJORequestResponseExample {
          * and populate the values using setters.
          */
 
+        Address address = new Address();
+
+        address.setCity("Pune");
+        address.setState("MH");
+        address.setCountry("India");
+
+
         User requestUser = new User();
 
         requestUser.setId(101);
         requestUser.setName("Swapnil");
         requestUser.setEmail("swapnil@gmail.com");
         requestUser.setAge(35);
+        requestUser.setAddress(address);
+
+
 
 
         /*

@@ -44,6 +44,13 @@ public class AnagramString {
 
 	static void isAnagramUsingSort(String str1, String str2) {
 
+		/*
+
+		String str1 = "I love you";
+		String str2 = "you love i";
+
+		* */
+
 		// Remove all spaces from both strings
 		String s1 = str1.replaceAll("\\s+", "");
 		String s2 = str2.replaceAll("\\s+", "");
