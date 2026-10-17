@@ -1,10 +1,8 @@
 package _interviewResources.EPAM;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 
@@ -118,10 +116,16 @@ public class StreamAPIPrograms {
         avgEmployeeAges();
 
         //Sort by keys from map
-        softMapByKeys();
+        sortMapByKeys();
 
         //remove Duplicate Word From String
         removeDuplicateWordFromString();
+
+        //rever string array
+        reverStringArray();
+
+        //reverseString
+        reverseString();
     }
 
 
@@ -643,7 +647,7 @@ public class StreamAPIPrograms {
                 Arrays.asList("Amit", "Rahul", "Swapnil");
 
         String result = names.stream()
-                .collect(Collectors.joining(", "));
+                .collect(Collectors.joining(""));
 
         System.out.println("19. Joined string : " + result);
     }
@@ -885,7 +889,7 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
 
         double averageAge = employees.values()
                 .stream()
-                .mapToInt(x -> x.intValue()) //mapToInt() converts each Integer object into a primitive int.
+                .mapToInt(x -> x) //mapToInt() converts each Integer object into a primitive int.
                 //.mapToInt(Integer::intValue)
                 .average()
                 .orElse(0);
@@ -893,7 +897,7 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
         System.out.println("26. Average age: " + averageAge);
     }
 
-    public static void softMapByKeys() {
+    public static void sortMapByKeys() {
         System.out.print("27. Sort by keys: ");
         Map<String, Integer> emp= new HashMap<>();
 
@@ -928,6 +932,62 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
                 .collect(Collectors.joining(" "));
 
         System.out.println("Duplicate removed: "+ result);
+    }
+
+
+    public static void reverStringArray(){
+
+        System.out.println("29. remove Duplicate Word From String: ");
+        //asc
+        String[] a = {"Zebra", "Xero", "Apple", "Aapple", "Jack", "Nik"};
+
+        System.out.println("Ascending order:  ");
+
+
+        Arrays.stream(a)
+                .sorted()
+                .forEach(s -> System.out.print(s + ", "));
+
+
+        //desc
+        System.out.println();
+        System.out.println("Descending order:  ");
+
+
+        Arrays.stream(a)
+                .sorted(Comparator.reverseOrder())
+                .forEach(s -> System.out.print(s + ", "));
+
+
+
+    }
+
+    public static void reverseString(){
+
+        /*
+        * Understand the logic
+                        For "hello", the character indexes are:
+                        Index	Character
+                        0	h
+                        1	e
+                        2	l
+                        3	l
+                        4	o
+                        - IntStream.range(0, str.length()) generates indexes 0, 1, 2, 3, 4.
+                        - str.charAt(str.length() - 1 - i) reads characters from the end to the beginning.
+                        - map(String::valueOf) converts each character into a String.
+                        - Collectors.joining() combines the characters into one String.*/
+
+        System.out.println("30. Reverse String: ");
+
+        String str = "hello";
+
+        String reversed = IntStream.range(0, str.length())
+                .mapToObj(i -> str.charAt(str.length() - 1 - i))
+                .map(String::valueOf)
+                .collect(Collectors.joining());
+
+        System.out.println(reversed);
     }
 }
 

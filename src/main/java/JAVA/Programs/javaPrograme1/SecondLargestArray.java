@@ -36,8 +36,8 @@ public class SecondLargestArray {
 	
 	
 	public static int findSecondLargest(int[] arr) {
-	    int largest = arr[0]; // Initialize with smallest possible value
-	    int secondLargest = arr[0]; // Initialize with smallest possible value
+	    int largest = Integer.MIN_VALUE; // Initialize with smallest possible value
+	    int secondLargest = Integer.MIN_VALUE; // Initialize with smallest possible value
 
 	    //int[] arr = { 5, 10, 3, 8, 15 };
 	    

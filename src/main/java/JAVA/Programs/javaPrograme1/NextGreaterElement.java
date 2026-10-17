@@ -40,6 +40,8 @@ public class NextGreaterElement {
 
         int[] arr = {4, 5, 2, 10, 8};
 
+
+
         for (int i = 0; i < arr.length; i++) {
 
             int nextGreater = -1;

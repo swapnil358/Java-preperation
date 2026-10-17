@@ -27,14 +27,16 @@ public class RemoveDuplicateWordsFromString {
 			}
 		}
 
+		//System.out.println(Arrays.toString(words));
+
 		String result = "";
 
 		for (int i = 0; i < words.length; i++) {
 			if (words[i] != null) {
-				if (!result.isEmpty()) {
-					result= result + " ";
-				}
-				result= result +  words[i];
+//				if (!result.isEmpty()) {
+//					result= result + " ";
+//				}
+				result= result +  words[i] + " ";
 			}
 		}
 

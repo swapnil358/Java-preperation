@@ -14,7 +14,8 @@ public class ShiftAll1ToLeftSide {
 		int[] arr1 = {1, 1, 4, 1, 7, 1, 82, 56, 1, 8, 0, 45, 1, 3};
 
 		System.out.println("Original Array  : " + Arrays.toString(arr1));
-
+		System.out.println();
+		System.out.println("Using two pointer approach ");
 		method1(arr1);
 
 		System.out.println("Method 1 Output  : " + Arrays.toString(arr1));

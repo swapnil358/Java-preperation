@@ -20,15 +20,30 @@ package JAVA.Programs.DataStructurePrgm;
 // Space Complexity:
 // O(1)
 
+import java.util.Arrays;
+import java.util.Comparator;
+
+import static JAVA.Programs.javaPrograme1.RemoveDuplicateWordsFromString.usingStream;
+
 public class BubbleSortString {
 
 	// Reference:
 	// https://youtu.be/v6hmmfIiKu4?t=1808
 
 	public static void main(String[] args) {
+		System.out.println("Using bubble sort");
+		usingBubbleSort();
 
+		System.out.println();
+		System.out.println("Using stream API=====>");
+		usingStream();
+
+
+	}
+
+	private static void usingBubbleSort() {
 		// Unsorted String array
-		String[] a = {"Zebra", "Xero", "Apple", "Aapple", "Jack", "Nik"	};
+		String[] a = {"Zebra", "Xero", "Apple", "Aapple", "Jack", "Nik"};
 
 		String temp;
 
@@ -70,4 +85,28 @@ public class BubbleSortString {
 			System.out.print(a[i] + ", ");
 		}
 	}
+
+
+	public static void usingStream(){
+		//asc
+			String[] a = {"Zebra", "Xero", "Apple", "Aapple", "Jack", "Nik"};
+
+		System.out.println("Ascending order:  ");
+			Arrays.stream(a)
+					.sorted()
+					.forEach(s -> System.out.print(s + ", "));
+
+
+		//desc
+		System.out.println();
+		System.out.println("Descending order:  ");
+		Arrays.stream(a)
+				.sorted(Comparator.reverseOrder())
+				.forEach(s -> System.out.print(s + ", "));
+
+
+
+	}
+
+
 }

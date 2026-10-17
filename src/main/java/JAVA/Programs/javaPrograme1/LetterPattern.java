@@ -11,6 +11,7 @@ package JAVA.Programs.javaPrograme1;
 public class LetterPattern {
     public static void main(String[] args) {
         String input = "2a3b4c5t";
+        //String input = "2b3c4t5a";
 
         for (int i = 0; i < input.length(); i++) {
             // Check if the character is a digit

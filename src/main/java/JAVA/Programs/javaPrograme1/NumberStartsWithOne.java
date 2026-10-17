@@ -7,6 +7,8 @@ import java.util.List;
 
 public class NumberStartsWithOne {
 
+    /*  int arr[] = {1, 23, 123, 45, 67, 167, 10, 11, 12, 901, 91, 19, 1111, 111, 111111};
+     *                                                        */
     public static int getFirstDigit(int num) {
 
         while (num >= 10) { // 123 / 10 = 12
