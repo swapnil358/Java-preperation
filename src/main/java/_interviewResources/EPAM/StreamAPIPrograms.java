@@ -1,3 +1,4 @@
+
 package _interviewResources.EPAM;
 
 import java.lang.reflect.Array;
@@ -131,6 +132,9 @@ public class StreamAPIPrograms {
 
         //reverseString
         reverseString();
+
+        // Question 31: Find top 3 highest distinct numbers
+        findTopThreeHighestNumbers();
     }
 
 
@@ -984,12 +988,12 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
         /*
         * Understand the logic
                         For "hello", the character indexes are:
-                        Index	Character
-                        0	h
-                        1	e
-                        2	l
-                        3	l
-                        4	o
+                        Index   Character
+                        0   h
+                        1   e
+                        2   l
+                        3   l
+                        4   o
                         - IntStream.range(0, str.length()) generates indexes 0, 1, 2, 3, 4.
                         - str.charAt(str.length() - 1 - i) reads characters from the end to the beginning.
                         - map(String::valueOf) converts each character into a String.
@@ -1005,6 +1009,32 @@ Answer: Stream the Map values, convert them to ints and call average(). Handle a
                 .collect(Collectors.joining());
 
         System.out.println(reversed);
+    }
+
+    /*
+     * ============================================================
+     * QUESTION 31:
+     * Find the top 3 highest DISTINCT numbers using Java Streams.
+     *
+     * Input:
+     * [10, 45, 23, 89, 67, 12, 90, 56, 89]
+     *
+     * Expected Output:
+     * [90, 89, 67]
+     * ============================================================
+     */
+    public static void findTopThreeHighestNumbers() {
+
+        List<Integer> numbers =
+                Arrays.asList(10, 45, 23, 89, 67, 12, 90, 56, 89);
+
+        List<Integer> top3 = numbers.stream()
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .limit(3)
+                .toList();
+
+        System.out.println("31. Top 3 highest numbers : " + top3);
     }
 }
 
@@ -1026,3 +1056,4 @@ distinct()   → optional duplicate removal
 collect()    → convert result back to List/Set/Map
 
 */
+
