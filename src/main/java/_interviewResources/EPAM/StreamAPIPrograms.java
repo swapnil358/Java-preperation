@@ -1,5 +1,6 @@
 package _interviewResources.EPAM;
 
+import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -19,6 +20,7 @@ import java.util.stream.IntStream;
         Sort numbers
         Sort strings alphabetically
         Remove duplicate numbers
+        Find Duplicate
         Find first matching element
         Check if any number is greater than 100
         Check if all numbers are positive
@@ -72,6 +74,9 @@ public class StreamAPIPrograms {
 
         // 12. Remove duplicate numbers
         removeDuplicates();
+
+        //findDuplicates
+        findDuplicates();
 
         // 13. Find first matching element
         findFirstMatchingElement();
@@ -459,6 +464,18 @@ public class StreamAPIPrograms {
                 .toList();
 
         System.out.println("12. Distinct : " + result);
+    }
+
+    public static void findDuplicates() {
+
+        int[] numbers = {1,2,3,2,4,1};
+
+        Set<Integer> seen = new HashSet<>();
+        Set<Integer> duplicates = Arrays.stream(numbers)
+                .boxed()
+                .filter(n -> !seen.add(n))
+                .collect(Collectors.toSet());
+        System.out.println("12. Duplicates : " + duplicates);
     }
 
 
