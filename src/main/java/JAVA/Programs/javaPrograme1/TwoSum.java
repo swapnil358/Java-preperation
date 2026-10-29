@@ -63,8 +63,7 @@ public class TwoSum {
         // Calling Method 1 - HashMap
         int result1[] = method1(nums, target);
 
-        System.out.println("Method 1 - HashMap: "
-                + Arrays.toString(result1));
+        System.out.println("Method 1 - HashMap: " + Arrays.toString(result1));
 
 
         // Calling Method 2 - Nested Loops

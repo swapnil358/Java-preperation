@@ -1,7 +1,7 @@
 package JAVA.Programs.javaPrograme1;
 /*
 
-To find the first and last occurrence of a target element in a sorted array, we can use Binary Search twice.
+To find the index of element first and last occurrence of a target element in a sorted array, we can use Binary Search twice.
 - First binary search finds the first occurrence.
 - Second binary search finds the last occurrence.
 
