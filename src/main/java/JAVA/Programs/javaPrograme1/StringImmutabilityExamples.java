@@ -4,15 +4,34 @@ public class StringImmutabilityExamples {
 
     public static void main(String[] args) {
 
+        System.out.println("========== Example 1 ==========");
         example1();
+
+        System.out.println("========== Example 2 ==========");
         example2();
+
+        System.out.println("========== Example 3 ==========");
         example3();
+
+        System.out.println("========== Example 4 ==========");
         example4();
+
+        System.out.println("========== Example 5 ==========");
         example5();
+
+        System.out.println("========== Example 6 ==========");
         example6();
+
+        System.out.println("========== Example 7 ==========");
         example7();
+
+        System.out.println("========== Example 8 ==========");
         example8();
+
+        System.out.println("========== Example 9 ==========");
         example9();
+
+        System.out.println("========== Example 10 ==========");
         example10();
 
     }
@@ -156,6 +175,7 @@ public class StringImmutabilityExamples {
         String s2 = "Java";
 
         System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
     }
 
 

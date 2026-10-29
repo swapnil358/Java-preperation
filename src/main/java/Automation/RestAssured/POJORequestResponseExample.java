@@ -72,11 +72,6 @@ public class POJORequestResponseExample {
         public Address() {
         }
 
-        public Address(String city, String state, String country) {
-            this.city = city;
-            this.state = state;
-            this.country = country;
-        }
 
         public String getCity() {
             return city;

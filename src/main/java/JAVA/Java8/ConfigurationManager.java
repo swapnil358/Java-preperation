@@ -1,4 +1,4 @@
-package Java8;
+package JAVA.Java8;
 
 import java.util.Properties;
 import java.util.function.Supplier;

@@ -62,6 +62,37 @@ public class PalindromeString {
         if (status) {
             System.out.println("String is palindrome");
         }
+
+
+    }
+
+    public static void method2(){
+        String name = "naman";
+        char[] arr = name.toCharArray();
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        // Reverse using two pointers
+        while (left < right) {
+            char temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        String reverse = new String(arr);
+
+        System.out.println("Original string: naman");
+        System.out.println("Reversed string: " + reverse);
+
+        if (name.equals(reverse)) {
+            System.out.println("It is a palindrome");
+        } else {
+            System.out.println("It is not a palindrome");
+        }
     }
 
     public static void main(String[] args) {
@@ -70,7 +101,7 @@ public class PalindromeString {
 //		IsPalindrom_Method2();
 
         usingTwoPointer();
-
+        method2();
     }
 
 }

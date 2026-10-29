@@ -80,7 +80,7 @@ Or you can use the LEFT() function:
 Order By Clause:
 
   List out the employee id, last name in ascending order based on the employee id.:
-  SQL > Select employee_id, last_name from employee order by employee_id
+  SQL > Select employee_id, last_name from employee order by employee_id asc
 
   List out the employee id, name in descending order based on salary column:
   SQL > Select employee_id, last_name, salary from employee order by salary desc
